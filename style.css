@@ -1,0 +1,161 @@
+* {
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+html,body {
+margin:0;
+padding:0;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body {
+font-family:Raleway, Calibri, Arial, sans-serif;
+font-weight:300;
+font-size:15px;
+color:#333;
+}
+
+h1 {
+font-size:3.5em;
+line-height:1.1em;
+margin:0;
+font-weight:300;
+color:grey;
+padding:60px 10px 20px;
+}
+h2 {
+font-size:2.5em;
+font-weight:300;
+color:grey;
+padding:60px 15px 20px 15px;
+margin:0;
+}
+h3 {
+font-size:1.8em;
+font-weight:300;
+color:grey;
+padding:10px 15px;
+margin:0;
+}
+
+p {
+padding:0 15px 15px;
+color:grey;
+margin:0;
+font-size: 1.1em;
+line-height: 1.6em;
+}
+
+a,a:visited {
+color:#75b5aa;
+text-decoration:none;
+}
+
+a:hover {
+text-decoration:underline;
+}
+
+.projects img {
+	max-width: 300px;
+	margin:0 10px 10px 10px;
+	border-radius: 20px;
+	float: right;
+}
+.armadillo {
+	width:100%;
+	margin: 20px 0px 0px 0px;
+	border-radius: 10px;
+}
+.circle {
+	border-radius: 50%;
+	width:230px;
+	float:right;
+	margin:0px 60px 20px 20px;
+}
+.center {
+	text-align:center;
+}
+
+.flexbox-container {
+	display: -ms-flex;
+   	display: -webkit-flex;
+   	display: flex;
+    flex-flow: row  wrap;
+	min-height: 100vh;
+}
+
+.wrap {
+	background-color: #fff;
+    flex: 2;
+    margin-left: 20px;
+    max-width: 700px;
+    min-width: 600px;
+}
+.portfolio {
+	max-width: none;
+}
+nav {
+	max-width: 350px;
+	min-width: 200px;
+    flex: 1;
+	margin-right: 0;
+	background:#9bcdc3;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0; left: 20px;
+  max-width:330px;
+}
+
+nav h1 {
+	color: #fff;
+}
+
+nav li{
+	list-style: none;
+	color: #fff;
+	margin-left: -25px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+nav li > ul > li {
+	font-size: 0.9em;
+}
+
+nav a, nav a:visited {
+	color: #fff;
+}
+
+.socialMedia {
+margin-left: 12px;
+}
+
+
+@media all and (max-width : 960px) {
+
+   .flexbox-container {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+   }
+   nav, .wrap {
+	   	min-width: 0;
+	 	max-width: none;
+   }
+   nav {
+		height: 400px;
+	    width: 100%
+	}
+   .wrap {
+   		width: 94%;
+   }
+   .nav-wrapper {
+   	 	position: relative;
+   }
+   .circle, .projects img {
+   		float: none;
+   }
+}
