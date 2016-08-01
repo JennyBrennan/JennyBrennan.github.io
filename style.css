@@ -131,7 +131,11 @@ nav a, nav a:visited {
 }
 
 .socialMedia {
-margin-left: 12px;
+	margin-left: 12px;
+}
+
+hr {
+	margin: 30px 15px;
 }
 
 
