@@ -105,6 +105,11 @@ nav li, #home li{
   float: left;
   margin-right: 250px;
 }
+#home h3{
+  color: #efefef;
+  margin: 0 0 20px 0;
+  padding-left: 0;
+}
 #home ul {
   margin-top: 320px;
   font-size: 2em;
@@ -120,23 +125,78 @@ nav li, #home li{
   text-align: center;
   margin: auto;
 }
+.social-media {
+  max-width: 30px;
+  margin-right: 8px;
+  margin-top: 15px;
+}
 
 
 
 p, h1, h2, h3, .contact, hr {
   margin-left: 40px;
 }
+.contact {
+  margin: 50px;
+}
 .fp-tableCell {
   vertical-align: top;
 }
 
-
-@media all and (max-width: 960px) {
-  .column {
+@media all and (max-width: 1300px) {
+  #home span {
+    display: none;
+  }
+  .img-circle {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media all and (max-width: 800px) {
+  h1 {
+    margin-top: 18vh;
+    z-index: 10;
+  }
+  h2 {
+    border-top: 1px solid #efefef;
+    padding-top: 60px;
+    margin-top: 20px;
+    width: 75%;
+  }
+  .column, #about p {
     width: 100%;
+    max-width: 80%;
+  }
+  .column {
+    margin-bottom: 30px;
+  }
+  .img-circle {
+    position: relative;
+    top: auto;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  hr {
+    background: none;
+    margin: 10px;
   }
   .armadillo {
     width: 80%;
     height: auto;
+  }
+  nav {
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+  }
+  nav ul {
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 500px) {
+  .circle {
+    width: 500px;
+    height: 500px;
   }
 }
