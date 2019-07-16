@@ -21,17 +21,12 @@ class Template extends React.Component {
 
     footer = (
       <footer>
-        <a href="/">
-          About
-        </a> &#183; <a href="https://twitter.com/jennyhbren">
-          Twitter 
-        </a> &#183; <a href="mailto:hello@jennybrennan.com"> 
-          Email 
-        </a> &#183; <a href="https://github.com/jennybrennan">
-          GitHub  
-        </a> &#183; <a href="https://linkedin.com/in/jennyhbren">
-          LinkedIn
-        </a> &#183; Site source code
+        <a href="/">About</a> &#183; 
+        <a href="https://twitter.com/jennyhbren"> Twitter </a> &#183; 
+        <a href="mailto:hello@jennybrennan.com"> Email </a> &#183; 
+        <a href="https://github.com/jennybrennan"> GitHub </a> &#183; 
+        <a href="https://linkedin.com/in/jennyhbren"> LinkedIn </a> &#183; 
+        <a href="https://github.com/JennyBrennan/jennybrennan.github.io"> Site source code </a>
       </footer>
     )
 
