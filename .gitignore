@@ -1,5 +1,5 @@
 node_modules
 public
 old-version
-./cache
+.cache/
 TODO.md
