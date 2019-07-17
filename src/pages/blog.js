@@ -1,6 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import Layout from "../components/layout"
 import Header from "../components/header"
 
 class BlogIndex extends React.Component {
@@ -8,22 +9,24 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
-        <Header title="Writing &amp; resources" subtitle="Blog posts, research, resources and helpful snippets."/>
-        <main>
-          <ul className="blog-index">
-            {posts.map(({ node }) => {
-              const title = get(node, 'frontmatter.title') || node.fields.slug
-              return (
-                <li className="blog-card">
-                  <Link to={node.fields.slug}>{title}</Link> - <em>{node.frontmatter.date}</em>
-                  <br/>{node.frontmatter.desc}
-                </li>
-              )
-            })}
-          </ul>
-        </main>
-      </div>
+      <Layout>
+        <div>
+          <Header title="Writing &amp; resources" subtitle="Blog posts, research, resources and helpful snippets."/>
+          <main>
+            <ul className="blog-index">
+              {posts.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                return (
+                  <li className="blog-card">
+                    <Link to={node.fields.slug}>{title}</Link> - <em>{node.frontmatter.date}</em>
+                    <br/>{node.frontmatter.desc}
+                  </li>
+                )
+              })}
+            </ul>
+          </main>
+        </div>
+      </Layout>
     )
   }
 }
