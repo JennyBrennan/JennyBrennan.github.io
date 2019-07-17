@@ -4,7 +4,7 @@ import "./style.css"
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
+    const children = this.props
     let nav
     let footer
 

@@ -13,7 +13,7 @@ class AboutPage extends React.Component {
                 <Header title="About" subtitle="Policy researcher and software engineer, trying to do the most good."/>
                 <main>
                     <article>
-                        <img className="profile-photo" src={jennybrennan} alt="Photo of Jenny Brennan"/>
+                        <img className="profile-photo" src={jennybrennan} alt="Jenny Brennan - a brown-haired woman stood infront of the sea"/>
                         <p>Bridging technology and policy, I'm a software engineer, with particular interests in data and AI, as well as an obsession for all things policy and politics.</p>
                         <p>Previously at <a href="https://twitter.com">Twitter</a> and <a href="https://joinef.com">Entrepreneur First</a>, I've also worked with a number of early stage startups, on projects ranging from developing AI personal assistants to teaching over 200 kids to code. I have a soft spot for Clojure and functional programming.</p>
                         <p>I'm an instructor at <a href="http://codefirstgirls.org.uk">Code First: Girls</a>, lecturer at Ada College, and curate <a href="http://londontechmeetups.com">London Tech Meetups</a>. I enjoy speaking at events.</p>

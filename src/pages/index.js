@@ -5,9 +5,7 @@ import Header from "../components/header"
 
 class Index extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const location = this.props.location
 
     return (
       <div>
