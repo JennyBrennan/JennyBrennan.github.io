@@ -4,7 +4,6 @@ Green: #75b5aa
 Darker grey: #ebe9e8
 Pale grey: #f8f7f7
 Text grey: #4d4d4d
-
 */
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans:500');
@@ -19,14 +18,22 @@ body {
 a {
     color: #75b5aa;
 }
-a.project-link {
+a:hover {
+    text-decoration: underline;
+}
+.project-link {
     text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
 h2 {
     padding-top: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+h3, h4, h5, h6 {
+    font-family: 'Work Sans', sans-serif;
 }
 blockquote {
     background: #fff;
@@ -46,9 +53,6 @@ nav a {
     display: block;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-}
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -57,21 +61,14 @@ nav ul {
 nav li {
     margin-right: 20px;
     list-style: none;
-    display: block;
     align-items: center;
     display: flex;
-}
-.push-left {
-    font-size: 1.5em;
 }
 header {
     background-color: #ebe9e8;
     margin: 0;
     display: block;
     padding: 40px 25px;
-}
-header h1 {
-    margin: 0;
 }
 header h3 {
     opacity: 0.7;
@@ -100,6 +97,12 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+main {
+    padding-bottom: 30px;
+}
+.push-left {
+    font-size: 1.5em;
 }
 .card-grid, .blog-index {
     display: flex;
@@ -165,9 +168,6 @@ footer a {
 .homepage {
     padding-left: 25px;
 }
-main {
-    padding-bottom: 30px;
-}
 .footnotes {
     font-size: 0.9em;
 }
@@ -177,36 +177,36 @@ main {
 .footnotes ol {
     padding-left: 1.2em;
 }
-a.footnote-backref {
+.footnote-backref {
     font-size: 0.7em;
 }
 @media only screen and (min-width: 600px) {
     main {
         padding: 40px 10vw;
-    }
+   }
     header {
         padding: 40px 10vw;
-    }
+   }
     nav {
         padding: 10px 10vw;
+   }
+    article {
+        margin: 0;
     }
     .card {
         width: 350px;
         height: 350px;
-    }
+   }
     .card-image {
         padding: 0;
         background-size: cover;
         margin: 10px 20px 20px 0;
-    }
-    article {
-        margin: 0;
-    }
+   }
     .push-left {
         margin-right: auto;
         font-size: 2em;
-    }
+   }
     .homepage {
         padding: 0;
-    }
-} 
+   }
+}
