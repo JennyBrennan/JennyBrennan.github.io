@@ -42,18 +42,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-52501300-1`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Jenny Brennan`,
-        short_name: `Jenny`,
+        short_name: `Jenny Brennan`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`
+        background_color: `#75b5aa`,
+        theme_color: `#75b5aa`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`
       },
     },
     `gatsby-plugin-feed`,
