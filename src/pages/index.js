@@ -2,6 +2,7 @@ import React from "react"
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Layout from "../components/layout"
+import Metadata from "../components/metadata"
 
 class Index extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class Index extends React.Component {
 
     return (
       <Layout>
+        <Metadata title="Jenny Brennan"/>
         <article>
             <h1>Hello there!</h1>
             <p>Some copy.</p>
