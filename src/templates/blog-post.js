@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
               <small>{post.frontmatter.date}</small>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
               <Link to={'/'} className="read-all">
-                ← Read all
+                ← Read all posts
               </Link>
             </article>
           </main>

@@ -12,7 +12,7 @@ body {
   
   /* Layout */
   footer {
-    border-top: #d4d4d4 solid 1px;
+    border-top: 1px solid #d4d4d4;
     margin-top: 20px;
     padding-top: 20px;
     text-align: right;
@@ -53,4 +53,28 @@ body {
   }
   a:hover {
     text-decoration: none;
+  }
+
+  /* Footnotes */
+  .footnotes {
+    font-size: 0.8em;
+  }
+  .footnotes p {
+    display: inline;
+  }
+  .footnotes hr {
+    border: 0;
+    border-top: 1px solid #d4d4d4;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+  .footnotes ol {
+    padding-left: 20px;
+  }
+  .footnotes li {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .footnotes {
+    margin-bottom: 30px;
   }
