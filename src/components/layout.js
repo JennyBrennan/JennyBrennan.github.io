@@ -10,23 +10,23 @@ class Template extends React.Component {
 
     nav = (
       <nav>
-          <ul>
-              <li className="push-left"><Link to={'/'} >Jenny Brennan</Link></li>
-              <li><Link to={'/projects'} >Projects</Link></li>
-              <li><Link to={'/blog'} >Blog</Link></li>
-              <li><Link to={'/about'} >About</Link></li>
-          </ul>
+        <h1><Link to={'/'} >Jenny Brennan</Link></h1>
+        <ul>
+          <li><a href="#">Posts</a></li>
+          <li><a href="#">Research</a></li>
+          <li><Link to={'/projects'} >Projects</Link></li>
+          <li><Link to={'/about'} >About</Link></li>
+        </ul>
       </nav>
     )
 
     footer = (
       <footer>
-        <a href="/">About</a> &#183; 
-        <a href="https://twitter.com/jennyhbren"> Twitter </a> &#183; 
-        <a href="mailto:hello@jennybrennan.com"> Email </a> &#183; 
-        <a href="https://github.com/jennybrennan"> GitHub </a> &#183; 
-        <a href="https://linkedin.com/in/jennyhbren"> LinkedIn </a> &#183; 
-        <a href="https://github.com/JennyBrennan/jennybrennan.github.io"> Site source code </a>
+        <li><a href="https://twitter.com/jennyhbren"> Twitter </a></li>
+        <li><a href="mailto:hello@jennybrennan.com"> Email </a></li>
+        <li><a href="https://github.com/jennybrennan"> GitHub </a></li>
+        <li><a href="https://linkedin.com/in/jennyhbren"> LinkedIn </a></li>
+        <li><Link to={'/about-site'}>About this site</Link></li>
       </footer>
     )
 

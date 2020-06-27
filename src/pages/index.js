@@ -2,7 +2,6 @@ import React from "react"
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Layout from "../components/layout"
-import Header from "../components/header"
 
 class Index extends React.Component {
   render() {
@@ -10,9 +9,7 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <div>
-          <Header subtitle="Policy researcher and software engineer, trying to do the most good."/>
-          <main>
+        <article>
           <h2 className="homepage">Projects</h2>
             <ul className="card-grid">
               <li>
@@ -52,8 +49,7 @@ class Index extends React.Component {
               })}
             </ul>
             <strong><Link to={'/blog'} className="homepage">Read more posts...</Link></strong>
-          </main>
-        </div>
+          </article>
       </Layout>
     )
   }
