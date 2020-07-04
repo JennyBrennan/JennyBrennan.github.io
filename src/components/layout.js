@@ -12,7 +12,7 @@ class Template extends React.Component {
       <nav>
         <h1><Link to={'/'} >Jenny Brennan</Link></h1>
         <ul>
-          <li><a href="#">Posts</a></li>
+          <li><a href={'/blog'}>Posts</a></li>
           <li><a href="#">Research</a></li>
           <li><Link to={'/projects'} >Projects</Link></li>
           <li><Link to={'/about'} >About</Link></li>
@@ -23,9 +23,7 @@ class Template extends React.Component {
     footer = (
       <footer>
         <li><a href="https://twitter.com/jennyhbren"> Twitter </a></li>
-        <li><a href="mailto:hello@jennybrennan.com"> Email </a></li>
         <li><a href="https://github.com/jennybrennan"> GitHub </a></li>
-        <li><a href="https://linkedin.com/in/jennyhbren"> LinkedIn </a></li>
         <li><Link to={'/about-site'}>About this site</Link></li>
       </footer>
     )

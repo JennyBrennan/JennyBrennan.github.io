@@ -20,8 +20,7 @@ class Index extends React.Component {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
                 return (
                   <li>
-                    <Link to={node.fields.slug}>{title}</Link> - <em>{node.frontmatter.date}</em>
-                    <br/>{node.frontmatter.desc}
+                    <Link to={node.fields.slug}>{title}</Link> <br/> {node.frontmatter.desc}
                   </li>
                 )
               })}

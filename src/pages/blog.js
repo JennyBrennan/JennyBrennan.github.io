@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
                 return (
                   <li className="blog-card">
-                    <Link to={node.fields.slug}>{title}</Link> - <em>{node.frontmatter.date}</em>
+                    <Link to={node.fields.slug}>{title}</Link>
                     <br/>{node.frontmatter.desc}
                   </li>
                 )

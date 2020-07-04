@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Header from "../components/header"
 import Layout from "../components/layout"
+import robot from "../images/environmentrobot.png"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout>
         <div>
+          <img className="blog-robot" src={robot} alt="blah"/>
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <Header title={post.frontmatter.title} subtitle={post.frontmatter.desc}/>
           <main>
