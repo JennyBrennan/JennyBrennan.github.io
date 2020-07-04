@@ -1,10 +1,6 @@
 import React from "react"
-import Header from "../components/header"
 import Layout from "../components/layout"
 import jennybrennan from "../images/jennybrennan.jpg"
-import twitter from "../images/twitter1.png"
-import linkedin from "../images/linkedin1.png"
-import email from "../images/email1.png"
 
 class AboutPage extends React.Component {
     render() {
