@@ -12,8 +12,8 @@ class Template extends React.Component {
       <nav>
         <h1><Link to={'/'} >Jenny Brennan</Link></h1>
         <ul>
-          <li><a href={'/blog'}>Posts</a></li>
-          <li><a href="#">Research</a></li>
+          <li><Link to={'/blog'} >Posts</Link></li>
+          <li><Link to={'/research'} >Research</Link></li>
           <li><Link to={'/projects'} >Projects</Link></li>
           <li><Link to={'/about'} >About</Link></li>
         </ul>
