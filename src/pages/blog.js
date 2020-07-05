@@ -11,7 +11,7 @@ class BlogIndex extends React.Component {
       <Layout>
         <div>
           <h1>Posts</h1>
-          <p>Blog posts, research, resources and helpful snippets.</p>
+          <p>Blog posts, research, resources and helpful snippets. (<a href="https://jennybrennan.com/rss.xml">RSS feed</a>).</p>
           <main>
             {categories.map(( { fieldValue, edges } ) => {
               return (
