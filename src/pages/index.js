@@ -10,7 +10,7 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <Metadata title="Jenny Brennan"/>
+        <Metadata title="Jenny Brennan" desc="AI policy researcher and software engineer"/>
         <article>
           <h1>Hello there!</h1>
           <p>Some copy.</p>

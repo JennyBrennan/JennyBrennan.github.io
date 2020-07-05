@@ -10,10 +10,15 @@ class BlogPostTemplate extends React.Component {
    
     return (
       <Layout>
-        <Metadata title={post.frontmatter.title + "- Jenny Brennan"}/>
+        {
+          post.frontmatter.featuredImage ?
+          <Metadata title={post.frontmatter.title + "- Jenny Brennan"} desc="post.frontmatter.desc" image={post.frontmatter.featuredImage.childImageSharp.fluid.src}/> :
+          <Metadata title={post.frontmatter.title + "- Jenny Brennan"} desc="post.frontmatter.desc"/> 
+        }
         <article>
           {
-            post.frontmatter.featuredImage===null ?  <br/> :  <Img className="blog-robot" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+            post.frontmatter.featuredImage &&  
+            <Img className="blog-robot" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
           }
           <h1>{post.frontmatter.title}</h1>
           <h3>{post.frontmatter.desc}</h3>

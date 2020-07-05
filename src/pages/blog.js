@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout>
-        <Metadata title="Posts - blog and resources - Jenny Brennan"/> 
+        <Metadata title="Posts by Jenny Brennan" desc="Blog posts, research, resources and helpful snippets."/> 
         <article>
           <h1>Posts</h1>
           <p>Blog posts, research, resources and helpful snippets. (<a href="https://jennybrennan.com/rss.xml">RSS feed</a>).</p>

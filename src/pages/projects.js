@@ -9,7 +9,7 @@ class ProjectsPage extends React.Component {
     render() {
         return (
             <Layout>
-                <Metadata title="Projects by Jenny Brennan"/>
+                <Metadata title="Projects by Jenny Brennan" desc="From civic tech and Chrome extensions, to coding education and speaking at events."/>
                 <article>
                     <h1>Projects</h1>
                     
@@ -17,7 +17,6 @@ class ProjectsPage extends React.Component {
                     <img className="project" src={manifestwho} />
                     <p>A game of guessing political party manifestos as an experiment in UK political understanding.</p>
                     <p><a href="https://manifestwho.com">Visit manifestwho.com &#8594;</a></p>
-                
                     
                     <h2>Coders Who Teach</h2>
                     <p>A community focussed on growing best practice in coding teaching amongst educators from industry.</p>
