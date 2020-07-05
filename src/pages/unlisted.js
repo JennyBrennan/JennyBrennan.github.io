@@ -10,7 +10,7 @@ class Unlisted extends React.Component {
 
     return (
       <Layout>
-        <Metadata title="Unlisted - Jenny Brennan"/> 
+        <Metadata title="Unlisted - Jenny Brennan" norobots={true} /> 
         <article>
           <h1>Unlisted posts</h1>
           <p>Posts that didn't make the cut for the <Link to={'/posts'}>posts page</Link> but are useful to share from time to time.</p>
