@@ -34,6 +34,8 @@ class Template extends React.Component {
         {nav}
         {children}
         {footer}
+        <script data-goatcounter="https://jenny-site-analytics.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
       </div>
     )
   }
