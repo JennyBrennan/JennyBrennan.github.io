@@ -22,7 +22,11 @@ class BlogIndex extends React.Component {
                     {edges.map(( { node } ) => {
                       return (
                         <li key={node.fields.slug}>
-                          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                          { 
+                            node.frontmatter.externalUrl ?
+                            <a href={node.frontmatter.externalUrl} target="_new">{node.frontmatter.title}</a> :
+                            <Link to={node.fields.slug}>{node.frontmatter.title}</Link> 
+                          }
                           <br/>{node.frontmatter.desc}
                         </li>
                       )
@@ -55,6 +59,7 @@ export const pageQuery = graphql`
               title
               desc
               tags
+              externalUrl
             }
           }
         }
