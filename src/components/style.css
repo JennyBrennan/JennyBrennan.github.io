@@ -10,91 +10,99 @@ body {
     width: 90%;
     max-width: 600px;
     margin: auto;
-  }
-  
-  /* Layout */
-  footer {
-    border-top: 3px dotted #d4d4d4;
+}
+
+/* Layout */
+footer {
+    border-top: 3px dotted #bdb09e;
     margin-top: 50px;
     padding: 20px 0;
     text-align: right;
-  }
-  
-  /* Nav */
-  nav h1 {
+}
+
+/* Nav */
+nav h1 {
     margin-bottom: 0;
-  }
-  nav h1 a {
+}
+nav h1 a {
     text-decoration: none;
     color: #333;
-  }
-  nav h1 a:hover {
+}
+nav h1 a:hover {
     text-decoration: underline;
-  }
-  nav ul{
+}
+nav ul{
     padding: 0;
     margin: 0;
-  }
-  nav li, footer li {
+}
+nav li, footer li {
     font-family: 'Playfair Display', serif;
     display: inline;
     margin-left: 0;
-  }
-  nav li:not(:first-child)::before, footer li:not(:first-child)::before {
+}
+nav li:not(:first-child)::before, footer li:not(:first-child)::before {
     content: " · ";
-  }
-  
-  /* Typography */
-  article h1 {
-    font-size: 2em;
-  }
-  h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
-  }
-  a {
-    color: rgb(150, 58, 1);
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  li {
-    margin-bottom: 0.5em;
-  }
+}
 
-  /* Footnotes */
-  .footnotes {
+/* Typography */
+article h1 {
+    font-size: 2em;
+}
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+a {
+    color: rgb(150, 58, 1);
+}
+a:hover {
+    text-decoration: none;
+}
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Tweets are blockquotes */
+blockquote {
+    background: #fff;
+    border-left: 10px solid #bdb09e;
+    margin: 30px 30px;
+    padding: 10px 20px 20px 20px;
+}
+
+/* Footnotes */
+.footnotes {
     font-size: 0.8em;
-  }
-  .footnotes p {
+}
+.footnotes p {
     display: inline;
-  }
-  .footnotes hr {
+}
+.footnotes hr {
     border: 0;
     border-top: 1px solid #d4d4d4;
     margin-top: 30px;
     padding-bottom: 20px;
-  }
-  .footnotes ol {
+}
+.footnotes ol {
     padding-left: 20px;
-  }
-  .footnotes li {
+}
+.footnotes li {
     margin-bottom: 20px;
     padding-left: 10px;
-  }
-  .footnotes {
+}
+.footnotes {
     margin-bottom: 30px;
-  }
+}
 
-  /* Images */
-  .profile-photo {
+/* Images */
+.profile-photo {
     max-width: 200px;
     max-height:200px;
     border-radius: 50%;
     float: right;
-  }
-  .blog-robot {
+}
+.blog-robot {
     margin-top: 30px;
     width: 100%;
     max-width: 500px;
     display: block;
-  }
+}
