@@ -106,3 +106,6 @@ blockquote {
     max-width: 500px;
     display: block;
 }
+.site-archive {
+    max-width: 500px;
+}
