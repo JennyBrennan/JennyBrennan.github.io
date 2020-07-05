@@ -36,11 +36,6 @@ export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {

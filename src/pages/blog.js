@@ -41,11 +41,6 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       group(field:frontmatter___tags){  
         fieldValue
