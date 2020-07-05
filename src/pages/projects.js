@@ -14,7 +14,7 @@ class ProjectsPage extends React.Component {
                     <h1>Projects</h1>
                     
                     <h2>ManifestWho?</h2>
-                    <img className="project" src={manifestwho} />
+                    <img className="project" src={manifestwho} alt="ManifestWho quiz site" />
                     <p>A game of guessing political party manifestos as an experiment in UK political understanding.</p>
                     <p><a href="https://manifestwho.com">Visit manifestwho.com &#8594;</a></p>
                     
@@ -27,7 +27,7 @@ class ProjectsPage extends React.Component {
                     <p><a href="https://unbias.io">Visit unbias.io &#8594;</a></p>
             
                     <h2>Coding Teaching</h2>
-                    <img className="project" src={coding101} />
+                    <img className="project" src={coding101} alt="Coding 101 slide in front of classroom" />
                     <p>I'm a lead instructor with <a href="http://www.codefirstgirls.org.uk/">Code First: Girls</a>, and <a href="http://23codestreet.com/">23 Code Street</a>. I designed and taught Twitter's Coding 101 course around the world. I have taught over 500 women and girls their first line of code. </p>
                 
                     <h2>London Tech Meetups</h2>
@@ -35,7 +35,7 @@ class ProjectsPage extends React.Component {
                     <p><a href="https://londontechmeetups.com">Visit londontechmeetups.com &#8594;</a></p>
                 
                     <h2>Design &amp; Illustration</h2>
-                    <img className="project" src={armadillo} />
+                    <img className="project" src={armadillo} alt="Cute armadillo with long tongue"/>
                     <p>I have lead redesign and branding processes for YC-backed non-profit <a href="https://80000hours.org">80,000 Hours</a>, kids learn to code platform <a href="https://codekingdoms.com/">Code Kingdoms</a> and a number of SMEs. I also love illustration - both digital and on paper.</p>
                 
                     <h2>Speaking</h2>
