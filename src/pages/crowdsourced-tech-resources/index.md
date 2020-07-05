@@ -1,5 +1,5 @@
 ---
-title: Crowdsourced Tech Education Resources
+title: Crowdsourced tech education resources
 date: "2018-10-28T23:46:37.121Z"
 desc: For getting into coding, and cyber security. Plus learnings from crowdsourcing on Twitter.
 tags: ["Coding education"]

@@ -1,5 +1,5 @@
 ---
-title: Hiring Resources
+title: Hiring resources
 date: "2018-02-01T22:12:03.284Z"
 desc: For fostering an inclusive hiring process.
 ---

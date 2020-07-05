@@ -1,5 +1,5 @@
 ---
-title: Paper Straws are a Distraction
+title: Paper straws are a distraction
 date: "2019-06-15T14:46:37.121Z"
 desc: Evidence-based climate actions for most people.
 tags: ["Environment"]
