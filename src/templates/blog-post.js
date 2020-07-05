@@ -2,17 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Layout from "../components/layout"
 import Metadata from "../components/metadata"
-import robot from "../images/environmentrobot.png"
+import Img from "gatsby-image"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-
+   
     return (
       <Layout>
-        <Metadata title="{post.frontmatter.title} - Jenny Brennan"/>
+        <Metadata title={post.frontmatter.title + "- Jenny Brennan"}/>
         <article>
-          <img className="blog-robot" src={robot} alt="blah"/>
+          {
+            post.frontmatter.featuredImage===null ?  <br/> :  <Img className="blog-robot" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+          }
           <h1>{post.frontmatter.title}</h1>
           <h3>{post.frontmatter.desc}</h3>
           <main>
@@ -47,6 +49,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         desc
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
       }
     }
   }
