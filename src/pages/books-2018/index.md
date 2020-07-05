@@ -2,6 +2,7 @@
 title: Books 2018
 date: "2018-12-31T23:46:37.121Z"
 desc: What and how I read in 2018.
+tags: ["Recommendations"]
 ---
 
 ## A note on reading more

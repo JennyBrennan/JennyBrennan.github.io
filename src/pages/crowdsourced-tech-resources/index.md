@@ -1,7 +1,8 @@
 ---
-title: Crowdsourced Tech Resources
+title: Crowdsourced Tech Education Resources
 date: "2018-10-28T23:46:37.121Z"
 desc: For getting into coding, and cyber security. Plus learnings from crowdsourcing on Twitter.
+tags: ["Coding education"]
 ---
 
 I've successfully used Twitter to crowdsource resources for people getting into tech. This post documents the results (and saves me scrolling next time someone asks), as well as learnings from the process.

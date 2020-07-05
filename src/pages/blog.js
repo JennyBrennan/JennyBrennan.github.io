@@ -2,28 +2,34 @@ import React from "react"
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Layout from "../components/layout"
-import Header from "../components/header"
 
 class BlogIndex extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const categories = get(this, 'props.data.allMarkdownRemark.group')
 
     return (
       <Layout>
         <div>
-          <Header title="Writing &amp; resources" subtitle="Blog posts, research, resources and helpful snippets."/>
+          <h1>Posts</h1>
+          <p>Blog posts, research, resources and helpful snippets.</p>
           <main>
-            <ul className="blog-index">
-              {posts.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug
-                return (
-                  <li className="blog-card">
-                    <Link to={node.fields.slug}>{title}</Link>
-                    <br/>{node.frontmatter.desc}
-                  </li>
-                )
-              })}
-            </ul>
+            {categories.map(( { fieldValue, edges } ) => {
+              return (
+                <div>
+                  <h2>{fieldValue}</h2>
+                  <ul>
+                    {edges.map(( { node } ) => {
+                      return (
+                        <li className="blog-card">
+                          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                          <br/>{node.frontmatter.desc}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              )
+            })}
           </main>
         </div>
       </Layout>
@@ -41,16 +47,20 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
-            desc
+      group(field:frontmatter___tags){  
+        fieldValue
+        edges {
+          node {
+            excerpt
+            fields {
+              slug
+            }
+            frontmatter {
+              date(formatString: "DD MMMM, YYYY")
+              title
+              desc
+              tags
+            }
           }
         }
       }

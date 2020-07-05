@@ -2,6 +2,7 @@
 title: Offices have a problem. Period.
 date: "2016-01-07T23:46:37.121Z"
 desc: Rant and resources on supporting people with periods at work. Ported from Medium.
+tags: ["Inclusion"]
 ---
 
 <small>Note: This was originally [published on Medium](https://medium.com/@jennyhbren/offices-have-a-problem-period-caede621936).</small>
