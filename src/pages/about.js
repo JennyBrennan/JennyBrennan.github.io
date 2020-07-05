@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
+import Metadata from "../components/metadata"
 import jennybrennan from "../images/jennybrennan.jpg"
 
 class AboutPage extends React.Component {
     render() {
         return (
             <Layout>
+                <Metadata title="About Jenny Brennan"/>
                 <article>
                     <h1>About</h1>
                     <img className="profile-photo" src={jennybrennan} alt="Jenny Brennan - a brown-haired woman stood infront of the sea"/>

@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import Metadata from "../components/metadata"
 
 class AboutPage extends React.Component {
     render() {
         return (
             <Layout>
+              <Metadata title="About JennyBrennan.com"/>
               <article>
                   <h1>About this website</h1>
                   <p>This site is <a href="https://github.com/JennyBrennan/jennybrennan.github.io">open sourced on GitHub</a>.</p>

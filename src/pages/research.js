@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import Metadata from "../components/metadata"
 
 class ResearchPage extends React.Component {
     render() {
         return (
             <Layout>
+                <Metadata title="Research by Jenny Brennan"/>
                 <article>
                     <h1>Research</h1>
                     <p>I research data, AI, policy and society at the <a href="https://adalovelaceinstitute.org">Ada Lovelace Institute</a>.</p>

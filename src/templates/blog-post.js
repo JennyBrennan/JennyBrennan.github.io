@@ -1,22 +1,20 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Header from "../components/header"
 import Layout from "../components/layout"
+import Metadata from "../components/metadata"
 import robot from "../images/environmentrobot.png"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
       <Layout>
-        <div>
+        <Metadata title="{post.frontmatter.title} - Jenny Brennan"/>
+        <article>
           <img className="blog-robot" src={robot} alt="blah"/>
-          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-          <Header title={post.frontmatter.title} subtitle={post.frontmatter.desc}/>
+          <h1>{post.frontmatter.title}</h1>
+          <h3>{post.frontmatter.desc}</h3>
           <main>
             <article>
               <small>{post.frontmatter.date}</small>
@@ -26,7 +24,7 @@ class BlogPostTemplate extends React.Component {
               </Link>
             </article>
           </main>
-        </div>
+        </article>
       </Layout>
     )
   }

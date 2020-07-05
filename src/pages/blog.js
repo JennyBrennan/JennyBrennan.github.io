@@ -2,6 +2,7 @@ import React from "react"
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Layout from "../components/layout"
+import Metadata from "../components/metadata"
 
 class BlogIndex extends React.Component {
   render() {
@@ -9,18 +10,18 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout>
-        <div>
+        <Metadata title="Posts - blog and resources - Jenny Brennan"/> 
+        <article>
           <h1>Posts</h1>
           <p>Blog posts, research, resources and helpful snippets. (<a href="https://jennybrennan.com/rss.xml">RSS feed</a>).</p>
-          <main>
             {categories.map(( { fieldValue, edges } ) => {
               return (
-                <div>
+                <div key={fieldValue}>
                   <h2>{fieldValue}</h2>
                   <ul>
                     {edges.map(( { node } ) => {
                       return (
-                        <li className="blog-card">
+                        <li key={node.fields.slug}>
                           <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
                           <br/>{node.frontmatter.desc}
                         </li>
@@ -30,8 +31,7 @@ class BlogIndex extends React.Component {
                 </div>
               )
             })}
-          </main>
-        </div>
+        </article>
       </Layout>
     )
   }

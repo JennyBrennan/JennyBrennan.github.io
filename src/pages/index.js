@@ -12,21 +12,21 @@ class Index extends React.Component {
       <Layout>
         <Metadata title="Jenny Brennan"/>
         <article>
-            <h1>Hello there!</h1>
-            <p>Some copy.</p>
-            <h2>Writing &amp; resources</h2>
-            <ul>
-              {posts.slice(0,3).map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug
-                return (
-                  <li>
-                    <Link to={node.fields.slug}>{title}</Link> <br/> {node.frontmatter.desc}
-                  </li>
-                )
-              })}
-            </ul>
-            <Link to={'/blog'} className="homepage">Read more posts...</Link>
-          </article>
+          <h1>Hello there!</h1>
+          <p>Some copy.</p>
+          <h2>Writing &amp; resources</h2>
+          <ul>
+            {posts.slice(0,3).map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.fields.slug
+              return (
+                <li>
+                  <Link to={node.fields.slug}>{title}</Link> <br/> {node.frontmatter.desc}
+                </li>
+              )
+            })}
+          </ul>
+          <Link to={'/blog'} className="homepage">Read more posts...</Link>
+        </article>
       </Layout>
     )
   }
