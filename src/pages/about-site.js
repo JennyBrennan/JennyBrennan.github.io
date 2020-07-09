@@ -23,7 +23,7 @@ class AboutPage extends React.Component {
                     <li><a href="https://pages.github.com/">GitHub Pages</a> for hosting.</li>
                     <li><a href="https://goatcounter.com">Goat Counter</a> for privacy-preserving aggregate usage analytics.</li>
                     <li><a href="https://code.visualstudio.com/">VS Code</a> as my current editor of choice.</li>
-                    <li><a href="https://procreate.art/">Procreate</a> iPad app for illustrations.</li>
+                    <li><a href="https://procreate.art/">Procreate</a> iPad app for drawing the robots.</li>
                   </ul>
                   <h2>Previous versions</h2>
                   <p>Inspired by <a href="https://alexwlchan.net/about-the-site/">Alex</a>, for entertainment/history, here are some previous versions of this site (with thanks to the <a href="https://web.archive.org/">WayBack Machine</a>). I still like sea green, but I like accessible colour contrast more:</p>
