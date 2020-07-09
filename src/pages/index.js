@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Layout from "../components/layout"
 import Metadata from "../components/metadata"
+import welcomeRobot from '../images/welcomerobot.png'
 
 class Index extends React.Component {
   render() {
@@ -12,8 +13,10 @@ class Index extends React.Component {
       <Layout>
         <Metadata title="Jenny Brennan" desc="AI policy researcher and software engineer"/>
         <article>
-          <h1>Hello there!</h1>
-          <p>Some copy.</p>
+          <img className="blog-robot" src={welcomeRobot} alt="Hello! on a sign held by a tiny robot." />
+          <h1>Researching how to make data and AI work for people and society.</h1>
+          <p>I'm Jenny, an AI policy researcher and software engineer.</p>
+          <p>You can read more <Link to={'/about'}>about me</Link>, <Link to={'/research'}>my current research</Link> on algorithmic systems in the public sector and inequalities, or the <Link to={'/projects'}>projects</Link> I'm involved in - from coding education and political tech to illustration. Or you can check out some recent <Link to={'/posts'}>posts</Link> below:</p>
           <h2>Writing &amp; resources</h2>
           <ul>
             {posts.slice(0,3).map(({ node }) => {
