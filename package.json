@@ -9,7 +9,7 @@
     "url": "https://github.com/jennybrennan/jennybrennan.github.io"
   },
   "dependencies": {
-    "acorn": "^6.2.0",
+    "acorn": "^6.4.1",
     "gatsby": "^2.18.17",
     "gatsby-cli": "^2.7.15",
     "gatsby-link": "^2.2.2",
