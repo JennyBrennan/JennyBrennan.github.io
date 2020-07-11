@@ -1,5 +1,5 @@
 ---
-title: Canada Itinerary
+title: Canada itinerary
 date: "2018-10-06T23:46:37.121Z"
 desc: The Rocky Mountains & Vancouver Island.
 ---

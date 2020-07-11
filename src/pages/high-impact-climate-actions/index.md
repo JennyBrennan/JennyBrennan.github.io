@@ -1,7 +1,9 @@
 ---
-title: Paper Straws are a Distraction
+title: Paper straws are a distraction
 date: "2019-06-15T14:46:37.121Z"
 desc: Evidence-based climate actions for most people.
+tags: ["Environment"]
+featuredImage: environmentrobot.png
 ---
 
 I worry that actions most promoted to help the environment aren't the best ones we could take. And that, whilst we congratulate ourselves for using paper straws, moral licensing[^1] lets us avoid higher impact actions. 
