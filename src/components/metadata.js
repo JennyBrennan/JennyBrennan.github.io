@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import defaultImage from "../images/testwebsiterobot.png"
+import defaultImage from "../images/welcomerobot.png"
 
 export default ({ title, desc, image, norobots }) => (
   <Helmet>
