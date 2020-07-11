@@ -12,8 +12,8 @@ class BlogPostTemplate extends React.Component {
       <Layout>
         {
           post.frontmatter.featuredImage ?
-          <Metadata title={post.frontmatter.title + "- Jenny Brennan"} desc="post.frontmatter.desc" image={post.frontmatter.featuredImage.childImageSharp.fluid.src}/> :
-          <Metadata title={post.frontmatter.title + "- Jenny Brennan"} desc="post.frontmatter.desc"/> 
+          <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} image={post.frontmatter.featuredImage.childImageSharp.fluid.src}/> :
+          <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc}/> 
         }
         <article>
           {
