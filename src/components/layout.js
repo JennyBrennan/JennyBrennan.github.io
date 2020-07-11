@@ -22,10 +22,12 @@ class Template extends React.Component {
 
     footer = (
       <footer>
-        <li><a href="https://jennybrennan.com/rss.xml">RSS</a></li>
-        <li><a href="https://twitter.com/jennyhbren">Twitter</a></li>
-        <li><a href="https://github.com/jennybrennan">GitHub</a></li>
-        <li><Link to={'/about-site'}>About this site</Link></li>
+        <ul>
+          <li><a href="https://jennybrennan.com/rss.xml">RSS</a></li>
+          <li><a href="https://twitter.com/jennyhbren">Twitter</a></li>
+          <li><a href="https://github.com/jennybrennan">GitHub</a></li>
+          <li><Link to={'/about-site'}>About this site</Link></li>
+        </ul>
       </footer>
     )
 
