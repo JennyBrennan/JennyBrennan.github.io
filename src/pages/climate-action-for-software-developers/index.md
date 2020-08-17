@@ -51,6 +51,10 @@ If you're keen to make change, it helps not to do it alone.
 
 Once we've automated everyone else's jobs, we'll probably automate our own too. Until then, software engineers are humans, so the highest leverage climate actions for humans apply here too. I summarised [evidence-based climate actions for most people here]([https://jennybrennan.com/high-impact-climate-actions/](https://jennybrennan.com/high-impact-climate-actions/)). 
 
+## Further resources
+
+* [The 8 Principles of Sustainable Software Engineering](https://mybuild.microsoft.com/sessions/5269e099-511b-4a23-8cb0-9923db7659b4?source=sessions&WT.mc_id=build2020_ca-article-ashussai) (20min video)
+
 ## What's missing?
 
 If you think there's something missing, I'd love to hear on [Twitter](https://twitter.com/jennyhbren).
