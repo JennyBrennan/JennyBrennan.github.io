@@ -49,4 +49,3 @@ The ask:
 The response was fantastic: 120 replies, many detailed and thoughtful, some direct offers of support/conference tickets from senior industry people, and a notable subset who had assumed I was the 17 year old girl 💁. 
 
 I didn't post a summary Tweet this time as the results were hugely diverse, and sometimes contradictory so I'd recommend working your way through them if cybersecurity's your thing.
-
