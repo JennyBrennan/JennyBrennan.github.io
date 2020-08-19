@@ -5,9 +5,9 @@ desc: What can you do to tackle the climate crisis in your code?
 tags: ["Environment"]
 ---
 
-If you're a software developer, and you don't have the option to focus on tackling the climate crisis full time, what are the best things you can do in your current role for the environment? 
-
 Without action, ICT may [exceed 14% of global greenhouse gas emissions by 2040](https://www.sciencedirect.com/science/article/abs/pii/S095965261733233X).[^1]
+
+If you're a software developer, and you don't have the option to focus on tackling the climate crisis full time, what are the best things you can do in your current role for the environment? 
 
 ## Data centre choice
 
@@ -37,15 +37,13 @@ If you're a data scientist, training ML models can be compute intensive, and com
 
 ## Employee action
 
-At larger tech companies, you might not have as much individual influence over infrastructure. But folk at big tech companies have used collective action to bargain for better climate outcomes, such as the [#11at11ClimateStrike](https://twitter.com/hashtag/11at11ClimateStrike).
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Building employee action: like user research, there points you can learn by starting:<br>1) What&#39;s your organisation&#39;s response?<br>2) What can you work on together?<br>3) What do people need to be able to act?<br><br>(These are great slides - hope they get shared!)<a href="https://twitter.com/hashtag/ClimateActionTech?src=hash&amp;ref_src=twsrc%5Etfw">#ClimateActionTech</a> <a href="https://t.co/NB4BMMEsMM">pic.twitter.com/NB4BMMEsMM</a></p>&mdash; Jenny Brennan (@jennyhbren) <a href="https://twitter.com/jennyhbren/status/1229495488216477696?ref_src=twsrc%5Etfw">February 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+At larger tech companies, you might not have as much individual influence over infrastructure. But folk at big tech companies are using collective action to push for better climate outcomes, such as [Amazon Employees for Climate Justice](https://medium.com/@amazonemployeesclimatejustice), [Googler protests against big oil contracts](https://www.bloomberg.com/news/articles/2019-11-04/now-googlers-are-protesting-company-s-cloud-deals-with-big-oil), and the [#11at11ClimateStrike](https://twitter.com/hashtag/11at11ClimateStrike). Responses have frustratingly included [Amazon firing some of the excellent climate action leaders](https://twitter.com/emahlee/status/1249968430465175552) who spoke up for warehouse workers during the coronavirus pandemic.
 
 ## Community wisdom
 
 If you're keen to make change, it helps not to do it alone.
 
-[ClimateAction.tech](http://climateaction.tech) community is a global online community of tech folks skills, expertise and platforms to support solutions to the climate crisis. They have an active international Slack and have also held in person meetups in London (pre-COVID).
+[ClimateAction.tech](http://climateaction.tech) is a global online community of tech folks using their skills, expertise and platforms to support solutions to the climate crisis. They have an active international Slack and have also held in person meetups in London (pre-COVID).
 
 ## Software engineers are humans too
 
