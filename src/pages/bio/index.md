@@ -5,7 +5,7 @@ desc: Current speaker bios + photo
 ---
 ## Photos of me:
 
-- <a href="http://localhost:8000/static/jennybrennan-1ad762bd5c6a72c2363843d7bf4eaefd.jpg">Standard 700px by 700px (290kb)</a>
+- <a href="/static/jennybrennan-1ad762bd5c6a72c2363843d7bf4eaefd.jpg">Standard 700px by 700px (290kb)</a>
 
 ## Bio - research (88 words)
 
