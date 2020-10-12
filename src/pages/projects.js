@@ -23,7 +23,7 @@ class ProjectsPage extends React.Component {
                     <p><a href="https://coderswhoteach.com">Visit coderswhoteach.com &#8594;</a></p>
                 
                     <h2>Unbias</h2>
-                    <p>A Chrome extension to remove faces and names in LinkedIn profiles and searches, to reduce the effects of unconscious bias on recruiters.</p>
+                    <p>A Chrome extension to remove faces and names in LinkedIn profiles and searches, in a bid to reduce the effects of unconscious bias on recruiters.</p>
                     <p><a href="https://unbias.io">Visit unbias.io &#8594;</a></p>
             
                     <h2>Coding Teaching</h2>

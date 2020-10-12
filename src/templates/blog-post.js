@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
             <Img className="blog-robot" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
           }
           <h1>{post.frontmatter.title}</h1>
-          <h3 class="subheading">{post.frontmatter.desc}</h3>
+          <h3 className="subheading">{post.frontmatter.desc}</h3>
           <main>
             <article>
               <small>{post.frontmatter.date}</small>

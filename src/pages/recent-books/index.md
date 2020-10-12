@@ -1,7 +1,7 @@
 ---
 title: Recent books
 date: "2020-06-05T23:46:37.121Z"
-desc: Top fiction and non-fiction of last few years
+desc: Top fiction and non-fiction of last few years.
 tags: ["Recommendations"]
 ---
 

@@ -3,7 +3,7 @@
 body {
     background: #f7f3f0;
     font-family: 'Inter', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #333;
     line-height: 1.8;
     width: 90%;
@@ -44,16 +44,17 @@ nav li:not(:first-child)::before, footer li:not(:first-child)::before {
 
 /* Typography */
 article h1 {
-    font-size: 2em;
-    margin-top: 0.5em;
+    font-size: 1.8em;
+    margin-top: 0.4em;
 }
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
-    padding-top: 0.5em;
+    padding-top: 0.4em;
 }
 .subheading {
     padding-top: 0;
     margin-top: -0.5em;
+    margin-bottom: 0;
 }
 a {
     color: rgb(150, 58, 1);
@@ -71,6 +72,15 @@ blockquote {
     border-left: 10px solid #bdb09e;
     margin: 30px 30px;
     padding: 10px 20px 20px 20px;
+}
+.twitter-button {
+    text-align: center;
+    display: block;
+    background: white;
+    border-radius: 30px;
+    margin: auto;
+    max-width: 300px;
+    margin: auto;
 }
 
 /* Footnotes */
@@ -98,6 +108,9 @@ blockquote {
 }
 
 /* Images */
+article img {
+    max-width: 600px;
+}
 .profile-photo {
     max-width: 200px;
     max-height: 200px;
