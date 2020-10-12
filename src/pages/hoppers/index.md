@@ -28,4 +28,11 @@ Recognition Auditing](https://dl.acm.org/doi/pdf/10.1145/3375627.3375820) - Raji
 
 ## Resources ✨
 
-* Introductory reading lists
+* [DataKind UK Data Ethics Bookclub](https://www.eventbrite.co.uk/o/datakind-uk-4112514489) - now online, but used to be in person in Edinburgh too!
+* [Toward ethical, transparent and fair AI/ML: a critical reading list](https://medium.com/@eirinimalliaraki/toward-ethical-transparent-and-fair-ai-ml-a-critical-reading-list-d950e70a70ea)
+* Introductory books:
+  * Weapons of Math Destruction - Cathy O'Neill
+  * Automating Inequality - Virginia Eubanks
+  * Algorithms of Oppression - Safiya Umoja Noble
+  * Race After Technology - Ruha Benjamin
+  * Invisible Women - Caroline Criado Perez
