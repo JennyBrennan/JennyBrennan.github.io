@@ -33,6 +33,7 @@ Recognition Auditing](https://dl.acm.org/doi/pdf/10.1145/3375627.3375820) - Raji
 * [Sustainable Servers by 2024 petition](https://www.change.org/p/sustainable-servers-by-2024)
 * Green AI - Schwartz et al., 2019
 * [ClimateAction.Tech community](http://climateaction.tech/)
+* [Doing Good Better](https://www.effectivealtruism.org/doing-good-better/) - Will MacAskill
 
 ## Resources ✨
 
