@@ -4,11 +4,13 @@ date: "2020-10-12T08:00:00.284Z"
 desc: References and resources to follow up
 ---
 
-The fab [Edinburgh Hoppers]() kindly invited me to give a keynote at their [annual Ada Lovelace Day conference](). I've pulled togeher references and follow up resources for that talk here.
+The fab [Edinburgh Hoppers](https://edinburgh-hoppers.github.io/website/index) kindly invited me to give a keynote at their [annual Ada Lovelace Day conference](https://edinburgh-hoppers.github.io/website/ald20). I've pulled together references and follow up resources for that talk here.
 
 ## References 📚
 
 * [Ada Lovelace: Victorian computing visionary](https://findingada.com/shop/a-passion-for-science-stories-of-discovery-and-invention/ada-lovelace-victorian-computing-visionary/) - Charman-Anderson
+* [Ada Lovelace Institute](https://adalovelaceinstitute.org)
+* [Examining the Black Box: Tools for Assessing Algorithmic Systems](https://www.adalovelaceinstitute.org/examining-the-black-box-tools-for-assessing-algorithmic-systems/) - Ada Lovelace Institute and DataKind UK, 2020
 
 * [Gender Shades](http://gendershades.org/) - Buolamwini et al., 2018
 * [Actionable Auditing: Investigating the Impact of Publicly Naming Biased Performance Results of Commercial AI Products](https://dl.acm.org/doi/10.1145/3306618.3314244) - Raji & Buolamwini, 2019
@@ -25,6 +27,12 @@ Recognition Auditing](https://dl.acm.org/doi/pdf/10.1145/3375627.3375820) - Raji
 * [Machine Bias, in ProPublica](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) - Angwin et al., 2016
 * [How We Analyzed the COMPAS Recidivism Algorithm](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm) - Larson et al., 2016
 * [Studying up: reorienting the study of algorithmic fairness around issues of power](https://dl.acm.org/doi/abs/10.1145/3351095.3372859) - Barabas et al., 2020
+
+* [The State of Data Center Energy Use in 2018
+](https://docs.google.com/document/d/1eCCb3rgqtQxcRwLdTr0P_hCK_drIZrm1Dpb4dlPeG6M/edit#heading=h.rx1b89shlr) - Johnson & Currie, 2018
+* [Sustainable Servers by 2024 petition](https://www.change.org/p/sustainable-servers-by-2024)
+* Green AI - Schwartz et al., 2019
+* [ClimateAction.Tech community](http://climateaction.tech/)
 
 ## Resources ✨
 
