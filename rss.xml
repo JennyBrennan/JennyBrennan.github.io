@@ -1,4 +1,338 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jenny Brennan's RSS Feed]]></title><description><![CDATA[Jenny Brennan's website]]></description><link>https://jennybrennan.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Oct 2020 11:34:19 GMT</lastBuildDate><item><title><![CDATA[Climate action for software developers and data scientists]]></title><description><![CDATA[Without action, ICT may exceed 14% of global greenhouse gas emissions by 2040. If you’re a software developer, and you don’t have the option…]]></description><link>https://jennybrennan.com/climate-action-for-software-developers/</link><guid isPermaLink="false">https://jennybrennan.com/climate-action-for-software-developers/</guid><pubDate>Mon, 17 Aug 2020 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Without action, ICT may &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S095965261733233X&quot;&gt;exceed 14% of global greenhouse gas emissions by 2040&lt;/a&gt;.&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jenny Brennan's RSS Feed]]></title><description><![CDATA[Jenny Brennan's website]]></description><link>https://jennybrennan.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 13 Oct 2020 07:53:33 GMT</lastBuildDate><item><title><![CDATA[Designing the Ada Lovelace hashflag emoji]]></title><description><![CDATA[If you’re on Twitter on 13th October 2020, you might notice:  Yes, that’s Ada Lovelace as an emoji. #AdaLovelaceDay celebrates and…]]></description><link>https://jennybrennan.com/ada-lovelace-hashflag-emoji/</link><guid isPermaLink="false">https://jennybrennan.com/ada-lovelace-hashflag-emoji/</guid><pubDate>Tue, 13 Oct 2020 09:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you’re on Twitter on 13th October 2020, you might notice:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;#AdaLovelaceDay with emoji woman with Princess Leia style brown hair in two big loops on each side of her head, purple lace dress and gold flower headband&quot;
+        title=&quot;#AdaLovelaceDay with emoji woman with Princess Leia style brown hair in two big loops on each side of her head, purple lace dress and gold flower headband&quot;
+        src=&quot;/static/0ecad67a56b7eab1a51c01edd74f25a2/fcda8/ada-lovelace-day-hashtag.png&quot;
+        srcset=&quot;/static/0ecad67a56b7eab1a51c01edd74f25a2/12f09/ada-lovelace-day-hashtag.png 148w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/e4a3f/ada-lovelace-day-hashtag.png 295w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/fcda8/ada-lovelace-day-hashtag.png 590w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/efc66/ada-lovelace-day-hashtag.png 885w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/c83ae/ada-lovelace-day-hashtag.png 1180w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/c1b63/ada-lovelace-day-hashtag.png 1200w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Yes, that’s Ada Lovelace as an emoji.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/hashtag/AdaLovelaceDay&quot;&gt;#AdaLovelaceDay&lt;/a&gt; celebrates and highlights the achievements of women in STEM and the story of a pioneering computer scientist. As a woman in STEM, I was lucky enough to get to design the emoji for the hashflag. &lt;/p&gt;
+&lt;p&gt;This blog looks at the constraints of designing a hashflag, the choices in how to represent Ada Lovelace, the compatibility and visibility requirements, and why any of this matters. I also built a hashflag tester, if you’re just here for the web apps. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/14f2193302cfd0eda650030ae1470ef3/ada-lovelace-hashflag-emoji-development.gif&quot; alt=&quot;Progression of Ada Lovelace emoji design: animated showing increase of head to body ratio, colour changes for background compatibility, and addition of binary pattern in the background&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;#AdaLovelaceDay?&lt;/h2&gt;
+&lt;p&gt;Ada Lovelace Day is an international celebration of the achievements of women in STEM, &lt;a href=&quot;https://findingada.com/about/history-of-ada-lovelace-day/&quot;&gt;kicked off in 2009 by the fab Suw Charman-Anderson&lt;/a&gt; to increase the profile of women in STEM and the pioneering computer scientist the day is named after. &lt;/p&gt;
+&lt;p&gt;Ada Lovelace was a boss. She wrote the first published computer algorithm before computers even existed. And she was able to see the potential of computing - beyond just calculations with numbers; but as something with huge potential across society. She did all that in the 1800s, living to just 36, and then was mainly forgotten for 100 years - only to have people try to play down her contributions to computing. And people wonder why we need to fight for women in STEM. So on Ada Lovelace Day this year, folks will be tweeting, talking, Zooming (it is 2020) and more to celebrate Ada Lovelace and the achievements of the many exceptional women in STEM today.&lt;/p&gt;
+&lt;h2&gt;What is a hashflag?&lt;/h2&gt;
+&lt;p&gt;A hashflag is when a hashtag on Twitter gets a little emoji automatically added at the end. &lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-dnt=&quot;true&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;it’s a hashtag but with a emoji&lt;/p&gt;&amp;mdash; rev (@jinkisjongg) &lt;a href=&quot;https://twitter.com/jinkisjongg/status/1303159433606737920?ref_src=twsrc%5Etfw&quot;&gt;September 8, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;From a design perspective, this means it’s teeny tiny - here are the specs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Square image - provide 72x72px, but potentially displayed as small as 16x16px&lt;/li&gt;
+&lt;li&gt;Colours that are visible on both light and dark backgrounds&lt;/li&gt;
+&lt;li&gt;Twitter recommends occupying as much of the canvas as possible, aiming for simplicity &amp;#x26; creativity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Which Ada Lovelace?&lt;/h2&gt;
+&lt;p&gt;Ada Lovelace lived in the 1800s so there aren’t a lot of photos around. There are really only four main images of Lovelace as an adult from the time she was alive. Three paintings, and a single photograph: &lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHNBLUKP//EABgQAQEBAQEAAAAAAAAAAAAAAAECEQAD/9oACAEBAAEFAgXspv1yL//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/AWf/xAAZEAADAAMAAAAAAAAAAAAAAAAAARECEjH/2gAIAQEABj8CU7qPFkP/xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhMUH/2gAIAQEAAT8hgB0K31zRoIXvzBlnN//aAAwDAQACAAMAAAAQj8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAVEQEBAAAAAAAAAAAAAAAAAAAQIf/aAAgBAgEBPxCD/8QAHBAAAgICAwAAAAAAAAAAAAAAASEAEUFRMWGB/9oACAEBAAE/EBLJNgPNxgQzFQpZf6g+Y1P/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Portraits of Ada ranging from vibrant purple, regal looking, to more toned town seated at a piano to the one photograph of her in black and white&quot;
+        title=&quot;Portraits of Ada ranging from vibrant purple, regal looking, to more toned town seated at a piano to the one photograph of her in black and white&quot;
+        src=&quot;/static/816d387d035304500fa9d2a83734ce68/1c72d/portraits-of-ada.jpg&quot;
+        srcset=&quot;/static/816d387d035304500fa9d2a83734ce68/a80bd/portraits-of-ada.jpg 148w,
+/static/816d387d035304500fa9d2a83734ce68/1c91a/portraits-of-ada.jpg 295w,
+/static/816d387d035304500fa9d2a83734ce68/1c72d/portraits-of-ada.jpg 590w,
+/static/816d387d035304500fa9d2a83734ce68/f9df6/portraits-of-ada.jpg 691w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;A few things are consistent between them:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A fancy hairdo involving some draping hair a the sides&lt;/li&gt;
+&lt;li&gt;A hair accessory with a floral theme (two of them constructed with two bands in a bright colour and large flowers)&lt;/li&gt;
+&lt;li&gt;Lace&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But there’s quite a lot of variation too. So I looked into how others had thought about this.&lt;/p&gt;
+&lt;h3&gt;How else have people chosen to represent Ada?&lt;/h3&gt;
+&lt;p&gt;From &lt;a href=&quot;https://www.youtube.com/watch?v=dybZODHG7MQ&quot;&gt;Doctor Who&lt;/a&gt; to &lt;a href=&quot;http://www.zafoukoyamamoto.com/books&quot;&gt;children’s books&lt;/a&gt; to &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Thrilling_Adventures_of_Lovelace_and_Babbage&quot;&gt;The Thrilling Adventures of Lovelace and Babbage&lt;/a&gt; to &lt;a href=&quot;https://www.chattyfeet.com/products/science-gifts-funny-socks-ada-shoe-lace&quot;&gt;the socks I’m wearing&lt;/a&gt;, it’s exciting to see more representation of Ada Lovelace in creative work.&lt;/p&gt;
+&lt;p&gt;There seem to be two broad approaches:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Taking a more toned down, naturalistic approach that perhaps most reflects the painting of Lovelace at the piano by Thomas Phillips shortly before her death.&lt;/li&gt;
+&lt;li&gt;Leaning heavily on the portrait, thought to be by Edward Chanlon, that has become the iconic image of Ada Lovelace - in flamboyant purple.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;What should we go for?&lt;/h3&gt;
+&lt;p&gt;It’s a small space and it needs to be identifiable from a distance - this leans towards an iconic image over historical realism. It also appears reflective of the truth: Lovelace seems to have chosen to be represented in a high fashion way in multiple portraits, and the one photograph of her has one hell of a hair accessory. Women in STEM shouldn’t have to look boring or conforming, or indeed any way at all, to be taken seriously - why dull down that flair?&lt;/p&gt;
+&lt;h2&gt;Style choice: Twemoji&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://twemoji.twitter.com/&quot;&gt;Twemoji&lt;/a&gt; is the Twitter-created open source emoji library they use to make standard emojis on Twitter.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 19.594594594594593%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Twemoji of a white judge, black airline pilot, yellow-emoji-tone elf and an otter&quot;
+        title=&quot;Twemoji of a white judge, black airline pilot, yellow-emoji-tone elf and an otter&quot;
+        src=&quot;/static/50d11919d447636adad24a67b9ab2454/fcda8/other-twemoji.png&quot;
+        srcset=&quot;/static/50d11919d447636adad24a67b9ab2454/12f09/other-twemoji.png 148w,
+/static/50d11919d447636adad24a67b9ab2454/e4a3f/other-twemoji.png 295w,
+/static/50d11919d447636adad24a67b9ab2454/fcda8/other-twemoji.png 590w,
+/static/50d11919d447636adad24a67b9ab2454/efc66/other-twemoji.png 885w,
+/static/50d11919d447636adad24a67b9ab2454/c83ae/other-twemoji.png 1180w,
+/static/50d11919d447636adad24a67b9ab2454/c1b63/other-twemoji.png 1200w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;It’s not a requirement of a hashflag to use Twemoji or conform to that style. &lt;a href=&quot;https://twitter.com/hashflagarchive&quot;&gt;@HashflagArchive&lt;/a&gt; shows the varied style of previous hashflag emojis:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABS0lEQVQoz5VSDU/CMBDd//89mhhNENAYghrA+JGIJnxswBgGNxhd17s+2+LIgGn0kmbvXrvru9fzcBBaa/we+uhs+R+vIIplI5GMyVphviEIxVjn7PDK8GT2o+kEcRhUFvXKt/E32V/muAoELkYCvUjibChw6Qs0/A2u5xr9p2fEby8oi6lQuG0nNWqWGTtslVmFlstZG54cZyPPFR67HTDzscIisYebRlkjyNCaSdT9DLWxwPkow/1c4nQgcBtKtMIc3UmCbu0ErFRVy3pnuN0oVFkv7SULQYiMh5az+YfJJVc/jitYeDdeMW6mCp2I0FsQ6oHCXUh4MLhtvk2Tt2bK4bbpYDx8hRTpzy2nSruiw4QxS9nh/idhkPCOf4/JYX+lkCQxmNTe43h/n7/jUMY/KSWIaL/lsgfF+JTxYa4r1l7B/8bh7JVFfQFJYFo23PiNlAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Hashflags of Alicia Keys, Trevor Noah and John Lennon in art syles ranging from pop-art abstract, to nearer photorealism to children&amp;#39;s scribbles&quot;
+        title=&quot;Hashflags of Alicia Keys, Trevor Noah and John Lennon in art syles ranging from pop-art abstract, to nearer photorealism to children&amp;#39;s scribbles&quot;
+        src=&quot;/static/c69b91028421550d77a39ad9133888d7/fcda8/other-hashflags.png&quot;
+        srcset=&quot;/static/c69b91028421550d77a39ad9133888d7/12f09/other-hashflags.png 148w,
+/static/c69b91028421550d77a39ad9133888d7/e4a3f/other-hashflags.png 295w,
+/static/c69b91028421550d77a39ad9133888d7/fcda8/other-hashflags.png 590w,
+/static/c69b91028421550d77a39ad9133888d7/efc66/other-hashflags.png 885w,
+/static/c69b91028421550d77a39ad9133888d7/c83ae/other-hashflags.png 1180w,
+/static/c69b91028421550d77a39ad9133888d7/c1b63/other-hashflags.png 1200w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The first version of the Adamoji (sorry, needed a catchier shorthand) came about as part of the &lt;a href=&quot;https://www.comuzi.xyz/&quot;&gt;Comuzi&lt;/a&gt; x &lt;a href=&quot;https://www.adalovelaceinstitute.org/&quot;&gt;Ada Lovelace Institute&lt;/a&gt; work on &lt;a href=&quot;https://adabot.netlify.app/&quot;&gt;the A.D.A. bot&lt;/a&gt;. Talking with Alex and Akil from Comuzi, we had visions of a pixel art or emoji vibe - a modern-retro feel to make history and computing feel accessible and engaging. &lt;/p&gt;
+&lt;p&gt;After plenty of deconstructing existing Twemoji and tweaking SVGs&lt;sup id=&quot;fnref-2&quot;&gt;&lt;a href=&quot;#fn-2&quot; class=&quot;footnote-ref&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; I settled on:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 16.89189189189189%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Plainer emoji-style image of Ada&quot;
+        title=&quot;Plainer emoji-style image of Ada&quot;
+        src=&quot;/static/66e0904b35a2ce620e66b9d9fa931d20/fcda8/first-ada.png&quot;
+        srcset=&quot;/static/66e0904b35a2ce620e66b9d9fa931d20/12f09/first-ada.png 148w,
+/static/66e0904b35a2ce620e66b9d9fa931d20/e4a3f/first-ada.png 295w,
+/static/66e0904b35a2ce620e66b9d9fa931d20/fcda8/first-ada.png 590w,
+/static/66e0904b35a2ce620e66b9d9fa931d20/efc66/first-ada.png 885w,
+/static/66e0904b35a2ce620e66b9d9fa931d20/c83ae/first-ada.png 1180w,
+/static/66e0904b35a2ce620e66b9d9fa931d20/c1b63/first-ada.png 1200w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;It was this image of Ada Lovelace that captured the team at Twitter’s imagination when I reached out - they wanted to make the #AdaLovelaceDay hashflag happen.&lt;/p&gt;
+&lt;p&gt;Three things gave me confidence in maintaining the design direction:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Legibility&lt;/strong&gt; - the Twemoji library was designed with the constraints of the Twitter UI and emoji sizes in mind; it gave a starting point that met our key criteria of being clear and identifiable at small sizes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt; - Twemoji look like they belong on Twitter; there are some great innovative hashflag designs (big fan of &lt;a href=&quot;https://twitter.com/HashflagArchive/status/1273829110633181184&quot;&gt;#AliciaKeys&lt;/a&gt;) that use different styles and still look great, but there are also some that, to me, look out of place; we had a starting point that fit&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fun and excitement&lt;/strong&gt; - the original image had already sparked with folks; there didn’t seem a good case for moving too far from it&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Compatibility and visibility: building a hashflag tester&lt;/h2&gt;
+&lt;p&gt;Now we knew it’d be used on Twitter.com I needed a way to consider how it would look in context.&lt;/p&gt;
+&lt;p&gt;This is where I admit it got a bit out of hand; I was an engineer faced with a design problem and too lazy to copy and paste little Adas in Figma many times…&lt;/p&gt;
+&lt;h3&gt;Presenting: the Hashflag Tester&lt;/h3&gt;
+&lt;p&gt;I built a &lt;a href=&quot;https://hashflag.glitch.me/&quot;&gt;little web app on Glitch&lt;/a&gt;&lt;sup id=&quot;fnref-3&quot;&gt;&lt;a href=&quot;#fn-3&quot; class=&quot;footnote-ref&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; to test hashflags against the available font size and background colour combinations on Twitter.com, and easily share them with others to review.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGklEQVQoz0XSy27aUBAGYN+wsY2JbQwNSUhIuBgSCJeGpGkjVUWRuul75AG66Dbb7Lvttm/QBVKTqptKkVp10cdoDQQHG2Lg79jQxtKRfHzkT//MHMZuvcBmuYVMoQlr5wBmrorUdhXp/EG0LFpq1o7O/n1L52vI7Naid3W9hFR4Rvv1wiGY2+8/8fnmKz5+eI/rmy/4dvsDn3rXKDZOCd7HVqmJN6+72LEb9FMdGUJkzYQoJ6BqBrqnLaQzFnhJhaLpYEDPIgjwq9fD4mEabuH7E1TaZ0hmiwS1cPX2HQrVNgxKbm1XwHE8GIaBKAi4vLjAE0OP9hzLgvGmATzPgzeeIghmEfj7j4PK05cwqbSc3aZUjajksMwQFCQFrBCDLCuEi4QRRBjPC2DGDwvcu/eYTnzM5/MIdPoDVDqvYOw2kd/vENpa9o7AVM6GEFfBigoSCQ3xuBRhYUKep+Quga47hjsaYTabrcA+qsddGIU29mrPCD1aDmGVMKYkwckatKROaAIcz69ASjiktg1HY9wNBvB8fwk6BJ6cwyh1sHf4HMX6Cd2EZjRdixLG1DVwig7NsGDqOiQp/gh6AZXsT+HeDeFPJv8TLktuYKNyhGKtg43SCgx7SOlYUYaoaDDWkhAl6RHsTxZwxgGGlMpxnAjshz0ME5aPsVk/g01XqEAps8UmzK0yBFUHpxqIaSmkLQsGTVmgibPUy79zc2Igu1y/4wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Web page automatically generating emoji against white, dark blue and black backrounds, at 6 different sizes&quot;
+        title=&quot;Web page automatically generating emoji against white, dark blue and black backrounds, at 6 different sizes&quot;
+        src=&quot;/static/e9982dd5c3b4deda483bb45d46b91701/fcda8/hashflag-tester.png&quot;
+        srcset=&quot;/static/e9982dd5c3b4deda483bb45d46b91701/12f09/hashflag-tester.png 148w,
+/static/e9982dd5c3b4deda483bb45d46b91701/e4a3f/hashflag-tester.png 295w,
+/static/e9982dd5c3b4deda483bb45d46b91701/fcda8/hashflag-tester.png 590w,
+/static/e9982dd5c3b4deda483bb45d46b91701/efc66/hashflag-tester.png 885w,
+/static/e9982dd5c3b4deda483bb45d46b91701/c83ae/hashflag-tester.png 1180w,
+/static/e9982dd5c3b4deda483bb45d46b91701/9d6a9/hashflag-tester.png 2256w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This prompted a few key changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bigger head, smaller body - to make more visible at small sizes&lt;/li&gt;
+&lt;li&gt;Lighter hair colour to make visible versus dark backgrounds, but still give overall sense of dark brown-black hair&lt;/li&gt;
+&lt;li&gt;Collar colour - after a couple of variations, I found the dark lace collar, whilst less legible as a collar on dark backgrounds, made the head pop, making it easier to identify as a person at the smallest sizes&lt;/li&gt;
+&lt;li&gt;Two-lined headband didn’t affect legibility, and looked more true to the portraits and photo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contextualising Ada: binary&lt;/h2&gt;
+&lt;p&gt;One of the goals of Ada Lovelace Day is to raise the profile of women in STEM around the world - if people don’t know who Ada Lovelace is, how do we give that context? &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB1WrvJyIP/8QAGRAAAwADAAAAAAAAAAAAAAAAAAERECEx/9oACAEBAAEFAk9YXKU//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAEQESExof/aAAgBAQABPyHkLG87Y9QNrP/aAAwDAQACAAMAAAAQ/wA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxABAAICAwAAAAAAAAAAAAAAAQARITFBUWH/2gAIAQEAAT8QvIrFQu2Dlu9jhniWpZ10/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Diagram for the computation of Bernoulli numbers - the first published computer program&quot;
+        title=&quot;Diagram for the computation of Bernoulli numbers - the first published computer program&quot;
+        src=&quot;/static/042bc2705a5fc731d0caa48625da46b0/1c72d/bernoulli-numbers.jpg&quot;
+        srcset=&quot;/static/042bc2705a5fc731d0caa48625da46b0/a80bd/bernoulli-numbers.jpg 148w,
+/static/042bc2705a5fc731d0caa48625da46b0/1c91a/bernoulli-numbers.jpg 295w,
+/static/042bc2705a5fc731d0caa48625da46b0/1c72d/bernoulli-numbers.jpg 590w,
+/static/042bc2705a5fc731d0caa48625da46b0/4b190/bernoulli-numbers.jpg 800w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is the first published computer program, written before a computer even existed! But Ada Lovelace’s pioneering program doesn’t look like popular representations of code or programming today. &lt;/p&gt;
+&lt;p&gt;Thanks to The Matrix and every TV show or movie where a character has claimed to be hacking into the CIA whilst the code on the screen only does basic sums,&lt;sup id=&quot;fnref-3&quot;&gt;&lt;a href=&quot;#fn-3&quot; class=&quot;footnote-ref&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; green binary or text on a dark background has become representative of ‘doing something clever with algorithms’. &lt;/p&gt;
+&lt;p&gt;Both Lovelace’s program and modern programming languages proved pretty hard to represent in a tiny emoji, but binary was just simple enough:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.945945945945947%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Ada Lovelace emoji with varying amounts and sizes of green binary in the background&quot;
+        title=&quot;Ada Lovelace emoji with varying amounts and sizes of green binary in the background&quot;
+        src=&quot;/static/918f1d2e02d46fcf52aa569abe1d8d72/fcda8/ada-variants.png&quot;
+        srcset=&quot;/static/918f1d2e02d46fcf52aa569abe1d8d72/12f09/ada-variants.png 148w,
+/static/918f1d2e02d46fcf52aa569abe1d8d72/e4a3f/ada-variants.png 295w,
+/static/918f1d2e02d46fcf52aa569abe1d8d72/fcda8/ada-variants.png 590w,
+/static/918f1d2e02d46fcf52aa569abe1d8d72/efc66/ada-variants.png 885w,
+/static/918f1d2e02d46fcf52aa569abe1d8d72/c83ae/ada-variants.png 1180w,
+/static/918f1d2e02d46fcf52aa569abe1d8d72/c1b63/ada-variants.png 1200w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;But Lovelace’s program was in decimal…&lt;/h3&gt;
+&lt;p&gt;Yes, I know. Two things: 1) the digits in binary are a subset of decimal 2) communication matters more than historical accuracy here - if I’d put a range of numbers, would it have been comprehensible or related to computing in the minds of folks in 2020?&lt;/p&gt;
+&lt;h2&gt;It’s live! Happy Ada Lovelace Day!&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;#AdaLovelaceDay with emoji woman with Princess Leia style brown hair in two big loops on each side of her head, purple lace dress and gold flower headband&quot;
+        title=&quot;#AdaLovelaceDay with emoji woman with Princess Leia style brown hair in two big loops on each side of her head, purple lace dress and gold flower headband&quot;
+        src=&quot;/static/0ecad67a56b7eab1a51c01edd74f25a2/fcda8/ada-lovelace-day-hashtag.png&quot;
+        srcset=&quot;/static/0ecad67a56b7eab1a51c01edd74f25a2/12f09/ada-lovelace-day-hashtag.png 148w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/e4a3f/ada-lovelace-day-hashtag.png 295w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/fcda8/ada-lovelace-day-hashtag.png 590w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/efc66/ada-lovelace-day-hashtag.png 885w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/c83ae/ada-lovelace-day-hashtag.png 1180w,
+/static/0ecad67a56b7eab1a51c01edd74f25a2/c1b63/ada-lovelace-day-hashtag.png 1200w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This Ada Lovelace emoji will appear next to the hashtags #AdaLovelace, #AdaLovelaceDay, #ALD20 and #ALD2020 on 13th October 2020. I hope it will help amplify the work of women in STEM today and introduce new people to Ada’s story. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;twitter-button&quot;&gt;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=AdaLovelaceDay&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #AdaLovelaceDay&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There are many folks around the world elevating, bringing together, supporting, encouraging and fighting the corner for women in STEM. Here are a few organisations in the UK (where I’m based) to follow on Twitter today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/Stemettes&quot;&gt;Stemettes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/codingblackfems&quot;&gt;Coding Black Females&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/CodeFirstGirls&quot;&gt;Code First Girls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/CodeYourFuture&quot;&gt;Code Your Future&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://codebar.io/&quot;&gt;Codebar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are lots of organisations dedicated to or named after Ada Lovelace, including the &lt;a href=&quot;https://adalovelaceinstitute.org&quot;&gt;Ada Lovelace Institute&lt;/a&gt;, where I work as a researcher aiming to make data and AI work for people and society.&lt;/p&gt;
+&lt;p&gt;Thanks to the folks at Twitter for making it happen, Suw at &lt;a href=&quot;https://findingada.org&quot;&gt;Finding Ada&lt;/a&gt; for kicking off Ada Lovelace Day, &lt;a href=&quot;https://twitter.com/comuzi_lab&quot;&gt;Comuzi&lt;/a&gt; for planting the idea seeds, and Hannah &amp;#x26; Octavia &amp;#x26; the rest of the &lt;a href=&quot;https://adalovelaceinstitute.org&quot;&gt;Ada Lovelace Institute&lt;/a&gt; team and &lt;a href=&quot;https://twitter.com/tweetanor&quot;&gt;Eleanor Harding&lt;/a&gt; for reviewing endless tiny emojis.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;For more details on each image, see &lt;a href=&quot;https://en.wikipedia.org/wiki/Ada_Lovelace&quot;&gt;Ada Lovelace on Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-2&quot;&gt;
+&lt;p&gt;The first iteration I made in my fast-aging  copy of Adobe Illustrator CS6, and sadly can’t find the original .ai files to show more work in progress; since then I’ve been working in &lt;a href=&quot;https://www.figma.com/&quot;&gt;Figma&lt;/a&gt; which means you can enjoy my messy artboards:&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACb0lEQVQ4y5VTS1PaYBTNH++una661C7aTqfjAx1tK4lQwTyURwIJgYRHECUk5E0Ax0X3pzehOI52nOniy/e6Od+5557LhGGI/xlBECCKE4z6HfRaFRitKjzPQRjF+R2TfbaB/1pv94/nvo94sYDeqoMvHkJij3Fj9REGPt2HG8DnQK+dZSNZpAR4javzApQqi2vuACO9gShZgInimOhGjwARUc9S2qawPYspOKI435vTXYhBT4cs8mjwl+A5DqbeoZgEzPRmBM+Z5j/6lM5sOkF25tp3OYA3n+OO9qbehqE2IZ5/x8neZ0g0S8UCvu1+wM77N7i6KJIUKRj1ooQJvZas7hHGCwyVGjSRhanwOcvsEXfmYGbPMJ1MYJkGhkYPfa0NrcbjkvsJ9mgPutLIM2N0gYculDBoCdDrl+gIF2hViujWeWRyzF0XE2uEXkclEBUSx+LoyyfUy2XUWRb7Ox+x+/YdxBKHZLkCY7W7GMkqrJYKsy6jL2swmjS35VwT255CKhVQOfsKkdunAhxDOivgmj2CXOWoMKcQzo4hFk+gETHmdjyGNSAdPSp7lGLt9bCOXfjBpgiO60BgD9GWBfRUhbwnY9DR0KiWIfMlGLoOXetAb+swVYNSbtbQlAQS3yUNU/yOu3hIbQKMcsC550EkRtPbMZbrB8SkU7q+x1BVYQgVpKsVEsokWSSbKju2DWc2ywODYMMyCMkyYUQ6naJLzBShDKFIwtd+/bWTT/YJ4LkvPcpkLKInPsyCw2xNXjOokn2zS3odQKlVMDR7Tzy7Gc8b4EWnPG23NF3CI9tUfxRwO7GQLtd5673Wqn8A7Q+OfTwUlywAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Many different attempts at the Adamoji spread in a vaguely tree-like way across the virtual artboard, with varying collar colours, hair accessories and proportions&quot;
+        title=&quot;Many different attempts at the Adamoji spread in a vaguely tree-like way across the virtual artboard, with varying collar colours, hair accessories and proportions&quot;
+        src=&quot;/static/c4d28c2f08fb9c93ac8ea38c9f3e96c4/fcda8/ada-artboards-screenshot.png&quot;
+        srcset=&quot;/static/c4d28c2f08fb9c93ac8ea38c9f3e96c4/12f09/ada-artboards-screenshot.png 148w,
+/static/c4d28c2f08fb9c93ac8ea38c9f3e96c4/e4a3f/ada-artboards-screenshot.png 295w,
+/static/c4d28c2f08fb9c93ac8ea38c9f3e96c4/fcda8/ada-artboards-screenshot.png 590w,
+/static/c4d28c2f08fb9c93ac8ea38c9f3e96c4/efc66/ada-artboards-screenshot.png 885w,
+/static/c4d28c2f08fb9c93ac8ea38c9f3e96c4/c83ae/ada-artboards-screenshot.png 1180w,
+/static/c4d28c2f08fb9c93ac8ea38c9f3e96c4/92bb4/ada-artboards-screenshot.png 1824w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-3&quot;&gt;
+&lt;p&gt;I’d like to tidy it up and open source it; at the time of writing it’s a little buggy because it was a quick build for my own use&lt;/p&gt;
+&lt;a href=&quot;#fnref-3&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-4&quot;&gt;
+&lt;p&gt;See &lt;a href=&quot;https://moviecode.tumblr.com/&quot;&gt;MovieCode&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;#fnref-4&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Climate action for software developers and data scientists]]></title><description><![CDATA[Without action, ICT may exceed 14% of global greenhouse gas emissions by 2040. If you’re a software developer, and you don’t have the option…]]></description><link>https://jennybrennan.com/climate-action-for-software-developers/</link><guid isPermaLink="false">https://jennybrennan.com/climate-action-for-software-developers/</guid><pubDate>Mon, 17 Aug 2020 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Without action, ICT may &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S095965261733233X&quot;&gt;exceed 14% of global greenhouse gas emissions by 2040&lt;/a&gt;.&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;If you’re a software developer, and you don’t have the option to focus on tackling the climate crisis full time, what are the best things you can do in your current role for the environment? &lt;/p&gt;
 &lt;h2&gt;Data centre choice&lt;/h2&gt;
 &lt;p&gt;Data centres are estimated to make up &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S095965261733233X&quot;&gt;45% of ICT’s greenhouse gas emissions&lt;/a&gt;. That’s thought to be &lt;a href=&quot;https://www.notion.so/Environmental-actions-for-software-developers-bcf0155dde7d4ef88994e2db673515cf&quot;&gt;similar energy use as the entire aviation industry&lt;/a&gt;. Artist/researcher Joana Moll even visualised the &lt;a href=&quot;http://www.janavirgin.com/CO2/DEFOOOOOOOOOOOOOOOOOOOOOREST_about.html&quot;&gt;trees needed to absorb the CO2 emitted by visits to google.com every second&lt;/a&gt; (spoiler: it’s a lot).&lt;/p&gt;
