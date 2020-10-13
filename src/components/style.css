@@ -76,8 +76,6 @@ blockquote {
 .twitter-button {
     text-align: center;
     display: block;
-    background: white;
-    border-radius: 30px;
     margin: auto;
     max-width: 300px;
     margin: auto;
@@ -110,6 +108,7 @@ blockquote {
 /* Images */
 article img {
     max-width: 600px;
+    width: 100%;
 }
 .profile-photo {
     max-width: 200px;
