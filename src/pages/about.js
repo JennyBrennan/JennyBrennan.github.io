@@ -7,7 +7,7 @@ class AboutPage extends React.Component {
     render() {
         return (
             <Layout>
-                <Metadata title="About Jenny Brennan" desc="AI policy researcher and software engineer" image="jennybrennan"/>
+                <Metadata title="About Jenny Brennan" desc="AI policy researcher and software engineer" image="jennybrennan" canonical="https://jennybrennan.com/about"/>
                 <article>
                     <h1>About</h1>
                     <img className="profile-photo" src={jennybrennan} alt="Jenny Brennan - a brown-haired woman stood infront of the sea"/>

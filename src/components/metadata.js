@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import defaultImage from "../images/welcomerobot.png"
 
-export default ({ title, desc, image, norobots }) => (
+export default ({ title, desc, canonical, image, norobots }) => (
   <Helmet>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -16,6 +16,7 @@ export default ({ title, desc, image, norobots }) => (
     <meta name="twitter:description" content={desc}/>
     <meta name="twitter:image" content={"https://jennybrennan.com" + (image ? image : defaultImage)}/>
     {norobots && <meta name="robots" content="noindex" />}
+    {canonical && <link href={canonical} rel="canonical" />}
     <title>{title}</title>
   </Helmet>
 )

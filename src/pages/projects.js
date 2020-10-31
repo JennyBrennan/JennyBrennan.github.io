@@ -9,7 +9,7 @@ class ProjectsPage extends React.Component {
     render() {
         return (
             <Layout>
-                <Metadata title="Projects by Jenny Brennan" desc="From civic tech and Chrome extensions, to coding education and speaking at events."/>
+                <Metadata title="Projects by Jenny Brennan" desc="From civic tech and Chrome extensions, to coding education and speaking at events." canonical="https://jennybrennan.com/projects"/>
                 <article>
                     <h1>Projects</h1>
                     

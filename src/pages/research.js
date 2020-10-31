@@ -6,7 +6,7 @@ class ResearchPage extends React.Component {
     render() {
         return (
             <Layout>
-                <Metadata title="Research by Jenny Brennan" desc="On data, AI, policy and society."/>
+                <Metadata title="Research by Jenny Brennan" desc="On data, AI, policy and society." canonical="https://jennybrennan.com/research"/>
                 <article>
                     <h1>Research</h1>
                     <p>I research data, AI, policy and society at the <a href="https://adalovelaceinstitute.org">Ada Lovelace Institute</a>.</p>

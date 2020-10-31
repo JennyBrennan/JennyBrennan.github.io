@@ -11,7 +11,7 @@ class Index extends React.Component {
 
     return (
       <Layout>
-        <Metadata title="Jenny Brennan" desc="AI policy researcher and software engineer"/>
+        <Metadata title="Jenny Brennan" desc="AI policy researcher and software engineer" canonical="https://jennybrennan.com/" />
         <article>
           <img className="blog-robot" src={welcomeRobot} alt="Hello! on a sign held by a tiny robot." />
           <h1>Researching how to make data and AI work for people and society.</h1>

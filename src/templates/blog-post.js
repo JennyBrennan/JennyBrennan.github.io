@@ -7,14 +7,13 @@ import Img from "gatsby-image"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const canonicalUrl="https://jennybrennan.com" + post.fields.slug
    
     return (
       <Layout>
-        {
-          post.frontmatter.featuredImage ?
-          <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} image={post.frontmatter.featuredImage.childImageSharp.fluid.src}/> :
-          <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc}/> 
-        }
+        {post.frontmatter.externalUrl ? <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} />
+        : post.frontmatter.featuredImage ? <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} canonical={canonicalUrl} image={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
+        : <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} canonical={canonicalUrl}/> }
         <article>
           {
             post.frontmatter.featuredImage &&  
@@ -50,6 +49,9 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -61,6 +63,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        externalUrl
       }
     }
   }
