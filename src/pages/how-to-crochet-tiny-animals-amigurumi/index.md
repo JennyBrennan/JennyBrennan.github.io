@@ -1,5 +1,5 @@
 ---
-title: How to Crochet Tiny Animals
+title: How to crochet tiny animals
 date: "2020-10-31T23:46:37.121Z"
 desc: Notes on learning to make amigurumi from scratch.
 tags: ["Creative"]
