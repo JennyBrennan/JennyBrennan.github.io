@@ -14,7 +14,7 @@ Amigurumi is the Japanese art of crocheting adorable small stuffed toys.
 > 
 > **Amigurumi** = those words merged together to mean crocheted stuffed doll
 
-I learnt to make cute tiny animals with this technique during the first COVID lockdown, having never crocheted or knitted before. Friends have asked for tips and the resources I used:
+I learnt to make cute tiny animals with this technique during the first COVID lockdown, having never crocheted or knitted before. I'm still very much a beginner, but friends have asked for tips and the resources I used:
 
 ## Picking a starter project
 
