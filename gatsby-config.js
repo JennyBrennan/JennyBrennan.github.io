@@ -48,8 +48,8 @@ module.exports = {
         name: `Jenny Brennan`,
         short_name: `Jenny Brennan`,
         start_url: `/`,
-        background_color: `#75b5aa`,
-        theme_color: `#75b5aa`,
+        background_color: `#f7f3f0`,
+        theme_color: `#f7f3f0`,
         display: `standalone`,
         icon: `src/images/favicon.png`
       },
