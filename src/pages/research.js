@@ -12,17 +12,18 @@ class ResearchPage extends React.Component {
                     <p>I research data, AI, policy and society at the <a href="https://adalovelaceinstitute.org">Ada Lovelace Institute</a>.</p>
                     <p>My current focus areas are:</p>
                     <ul>
-                      <li>The use of algorithmic decision systems in the public sector</li>
-                      <li>Methods and policy for auditing or regulatory inspection of algorithmic systems</li>
+                        <li>The use of algorithmic decision systems in the public sector</li>
+                        <li>Methods and policy for auditing or regulatory inspection of algorithmic systems</li>
                     </ul>
                     <p>I'm also involved with the Ada Lovelace Institute's research on health data and inequality, facial recognition and biometrics.</p>
                     <p>Beyond my main research, I'm also interested in the power dynamics of data infrastructure, the environmental impact of AI and existential risk.</p>
                     <p>I've previously worked on research into policymaking for future generations and  unconscious bias, particularly in recruitment and online platforms.</p>
                     <h2>Recent publications</h2>
                     <ul>
-                      <li><a href="https://www.adalovelaceinstitute.org/examining-the-black-box-tools-for-assessing-algorithmic-systems/">Examining the black box: tools for assessing algorithmic systems</a></li>
-                      <li><a href="https://www.adalovelaceinstitute.org/facial-recognition-defining-terms-to-clarify-challenges/">Facial recognition: defining terms to clarify challenges</a></li>
-                      <li><a href="https://www.adalovelaceinstitute.org/beyond-face-value-public-attitudes-to-facial-recognition-technology/">Beyond face value: public attitudes to facial recognition technology</a></li>
+                        <li><a href="https://www.adalovelaceinstitute.org/algorithms-in-social-media-realistic-routes-to-regulatory-inspection/">Inspecting algorithms in social media platforms</a></li>
+                        <li><a href="https://www.adalovelaceinstitute.org/examining-the-black-box-tools-for-assessing-algorithmic-systems/">Examining the black box: tools for assessing algorithmic systems</a></li>
+                        <li><a href="https://www.adalovelaceinstitute.org/facial-recognition-defining-terms-to-clarify-challenges/">Facial recognition: defining terms to clarify challenges</a></li>
+                        <li><a href="https://www.adalovelaceinstitute.org/beyond-face-value-public-attitudes-to-facial-recognition-technology/">Beyond face value: public attitudes to facial recognition technology</a></li>
                     </ul>
                 </article>
             </Layout>
