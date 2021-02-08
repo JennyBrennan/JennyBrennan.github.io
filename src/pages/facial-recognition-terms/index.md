@@ -6,4 +6,4 @@ tags: ["AI policy"]
 externalUrl: "https://www.adalovelaceinstitute.org/facial-recognition-defining-terms-to-clarify-challenges/" 
 ---
 
-Read the [blog on AdaLovelaceInstitute.org](https://www.adalovelaceinstitute.org/facial-recognition-defining-terms-to-clarify-challenges/).
+Read the [facial recognition terms blog post on AdaLovelaceInstitute.org](https://www.adalovelaceinstitute.org/facial-recognition-defining-terms-to-clarify-challenges/).
