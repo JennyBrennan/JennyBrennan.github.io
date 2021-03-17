@@ -14,9 +14,9 @@ class Index extends React.Component {
         <Metadata title="Jenny Brennan" desc="AI policy researcher and software engineer" canonical="https://jennybrennan.com/" />
         <article>
           <img className="blog-robot" src={welcomeRobot} alt="Hello! on a sign held by a tiny robot." />
-          <h1>Researching how to make data and AI work for people and society.</h1>
-          <p>I'm Jenny, an AI policy researcher and software engineer.</p>
-          <p>You can read more <Link to={'/about'}>about me</Link>, <Link to={'/research'}>my current research</Link> on algorithmic systems in the public sector and inequalities, or the <Link to={'/projects'}>projects</Link> I'm involved in - from coding education and political tech to illustration. Or you can check out some recent <Link to={'/posts'}>posts</Link> below:</p>
+          <h1>Researching how to hold humans accountable for AI.</h1>
+          <p>I'm Jenny, AI policy researcher and software engineer.</p>
+          <p>You can read more <Link to={'/about'}>about me</Link>, <Link to={'/research'}>my current research</Link> on inspecting algorithms and assessing their impact on people and society, or the <Link to={'/projects'}>projects</Link> I'm involved in - from coding education and political tech to illustration. Or you can check out some recent <Link to={'/posts'}>posts</Link> below:</p>
           <h2>Writing &amp; resources</h2>
           <ul>
             {posts.slice(0,3).map(({ node }) => {

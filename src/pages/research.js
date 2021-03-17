@@ -12,10 +12,10 @@ class ResearchPage extends React.Component {
                     <p>I research data, AI, policy and society at the <a href="https://adalovelaceinstitute.org">Ada Lovelace Institute</a>.</p>
                     <p>My current focus areas are:</p>
                     <ul>
-                        <li>The use of algorithmic decision systems in the public sector</li>
-                        <li>Methods and policy for auditing or regulatory inspection of algorithmic systems</li>
+                        <li>Methods, policy and capacity building for auditing/inspecting algorithmic systems</li>
+                        <li>Algorithmic impact assessments and approaches to increase consideration and mitigation of risks in software development and data science</li>
+                        <li>Transparency and accountability for of AI in the public sector</li>
                     </ul>
-                    <p>I'm also involved with the Ada Lovelace Institute's research on health data and inequality, facial recognition and biometrics.</p>
                     <p>Beyond my main research, I'm also interested in the power dynamics of data infrastructure, the environmental impact of AI and existential risk.</p>
                     <p>I've previously worked on research into policymaking for future generations and  unconscious bias, particularly in recruitment and online platforms.</p>
                     <h2>Recent publications</h2>
