@@ -4,6 +4,7 @@ import Metadata from "../components/metadata"
 import armadillo from "../images/projects/armadillo.png"
 import coding101 from "../images/projects/coding101.jpg"
 import manifestwho from "../images/projects/manifestwho.png"
+import researchascraft from "../images/projects/research-as-craft-logo.png"
 
 class ProjectsPage extends React.Component {
     render() {
@@ -13,15 +14,20 @@ class ProjectsPage extends React.Component {
                 <article>
                     <h1>Projects</h1>
                     
+                    <h2>Research as craft</h2>
+                    <img className="project" src={researchascraft} alt="Green pencil sharpener cartoon with sparks flying" />
+                    <p>A newsletter and community about how we can grow and improve as researchers. It’s inspired by the idea of traditional crafts as tangible practices that can be honed, shared and developed. </p>
+                    <p><a href="https://www.getrevue.co/profile/ResearchAsCraft">Subscribe to Research as Craft &#8594;</a></p>
+                       
+                    <h2>Coders Who Teach</h2>
+                    <p>A community focussed on growing best practice in coding teaching amongst educators from industry.</p>
+                    <p><a href="https://coderswhoteach.com">Visit coderswhoteach.com &#8594;</a></p>
+                    
                     <h2>ManifestWho?</h2>
                     <img className="project" src={manifestwho} alt="ManifestWho quiz site" />
                     <p>A game of guessing political party manifestos as an experiment in UK political understanding.</p>
                     <p><a href="https://manifestwho.com">Visit manifestwho.com &#8594;</a></p>
-                    
-                    <h2>Coders Who Teach</h2>
-                    <p>A community focussed on growing best practice in coding teaching amongst educators from industry.</p>
-                    <p><a href="https://coderswhoteach.com">Visit coderswhoteach.com &#8594;</a></p>
-                
+                 
                     <h2>Unbias</h2>
                     <p>A Chrome extension to remove faces and names in LinkedIn profiles and searches, in a bid to reduce the effects of unconscious bias on recruiters.</p>
                     <p><a href="https://unbias.io">Visit unbias.io &#8594;</a></p>

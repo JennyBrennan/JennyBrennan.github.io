@@ -15,7 +15,7 @@ class AboutPage extends React.Component {
                     <p>Previously in software engineering at <a href="https://twitter.com">Twitter</a> and <a href="https://joinef.com">Entrepreneur First</a>; I've also worked with a number of early stage startups on projects ranging from developing AI personal assistants to an editor for the BBC micro:bit. I have a soft spot for Clojure and functional programming.</p>
                     <p>I'm a lead instructor with <a href="http://codefirstgirls.org.uk">Code First: Girls</a>, have lectured in Data Ethics at <a href="https://ada.ac.uk/">Ada College</a>, and founded the <a href="https://coderswhoteach.com">Coders Who Teach</a> community; I also curate <a href="http://londontechmeetups.com">London Tech Meetups</a>. I am a public speaker with experience in panel moderation, conferences, workshop facilitation and meetups.</p>
                     <p>My academic background is in Politics, Philosophy and Economics, and beyond my core research, I'm interested in the effects of <a href="https://unbias.io">unconscious bias in hiring processes</a> and <a href="http://effective-altruism.com/ea/45/what_is_effective_altruism/" title="Introduction to Effective Altruism">effective altruism</a>.</p>
-                    <p>When I'm not doing those things, I'm usually drawing, painting, climbing or behind a drum kit.</p>
+                    <p>When I'm not doing those things, I'm usually drawing, painting, climbing or behind a drum kit. I sometimes <a href="http://localhost:8000/ada-lovelace-hashflag-emoji/">design emojis</a>.</p> 
                     <h3>If you need a <a href="/bio">speaker bio or headshot</a>.</h3>
                     <h2>Elsewhere on the internet:</h2>
                     <ul>
