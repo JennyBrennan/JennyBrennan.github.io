@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-about-site-js","path":"/about-site/","result":{"pageContext":{}}}
+{
+    "componentChunkName": "component---src-pages-about-site-js",
+    "path": "/about-site/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": []}
