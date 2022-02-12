@@ -13,8 +13,8 @@ class BlogIndex extends React.Component {
       <Layout>
         <Metadata title="Posts by Jenny Brennan" desc="Blog posts, research, resources and helpful snippets."/> 
         <article>
-          <h1>Posts</h1>
-          <p>Blog posts, research, resources and helpful snippets. (<a href="/rss.xml">RSS feed</a>).</p>
+          <h1>Blog</h1>
+          <p>Blog posts, resources and helpful snippets. (<a href="/rss.xml">RSS feed</a>). For writing on AI policy or elsewhere on the internet see my <a href="/research#press-media-blogs">research press, media and blogs</a>.</p>
             {categories.map(( { fieldValue, edges } ) => {
               return (
                 <div key={fieldValue}>
