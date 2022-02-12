@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import Metadata from "../components/metadata"
 import Img from "gatsby-image"
@@ -11,8 +12,7 @@ class BlogPostTemplate extends React.Component {
    
     return (
       <Layout>
-        {post.frontmatter.externalUrl ? <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} />
-        : post.frontmatter.featuredImage ? <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} canonical={canonicalUrl} image={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
+        {post.frontmatter.featuredImage ? <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} canonical={canonicalUrl} image={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
         : <Metadata title={post.frontmatter.title} desc={post.frontmatter.desc} canonical={canonicalUrl}/> }
         <article>
           {
@@ -63,7 +63,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        externalUrl
       }
     }
   }

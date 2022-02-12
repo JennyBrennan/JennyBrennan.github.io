@@ -1,6 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import Metadata from "../components/metadata"
 
@@ -22,11 +23,7 @@ class BlogIndex extends React.Component {
                     {edges.map(( { node } ) => {
                       return (
                         <li key={node.fields.slug}>
-                          { 
-                            node.frontmatter.externalUrl ?
-                            <a href={node.frontmatter.externalUrl} target="_new">{node.frontmatter.title}</a> :
-                            <Link to={node.fields.slug}>{node.frontmatter.title}</Link> 
-                          }
+                          <Link to={node.fields.slug}>{node.frontmatter.title}</Link> 
                           <br/>{node.frontmatter.desc}
                         </li>
                       )
@@ -59,7 +56,6 @@ export const pageQuery = graphql`
               title
               desc
               tags
-              externalUrl
             }
           }
         }

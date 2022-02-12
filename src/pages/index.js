@@ -1,6 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import Metadata from "../components/metadata"
 import welcomeRobot from '../images/welcomerobot.png'
