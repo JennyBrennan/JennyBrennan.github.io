@@ -17,7 +17,7 @@ class ProjectsPage extends React.Component {
                     <h2>Research as craft</h2>
                     <img className="project" src={researchascraft} alt="Green pencil sharpener cartoon with sparks flying" />
                     <p>A newsletter and community about how we can grow and improve as researchers. It’s inspired by the idea of traditional crafts as tangible practices that can be honed, shared and developed. </p>
-                    <p><a href="https://www.getrevue.co/profile/ResearchAsCraft">Subscribe to Research as Craft &#8594;</a></p>
+                    <p><a href="https://researchascraft.substack.com/">Subscribe to Research as Craft &#8594;</a></p>
                        
                     <h2>Coders Who Teach</h2>
                     <p>A community focussed on growing best practice in coding teaching amongst educators from industry.</p>
