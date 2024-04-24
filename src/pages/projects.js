@@ -27,10 +27,6 @@ class ProjectsPage extends React.Component {
                     <img className="project" src={manifestwho} alt="ManifestWho quiz site" />
                     <p>A game of guessing political party manifestos as an experiment in UK political understanding.</p>
                     <p><a href="https://manifestwho.com">Visit manifestwho.com &#8594;</a></p>
-                 
-                    <h2>Unbias</h2>
-                    <p>A Chrome extension to remove faces and names in LinkedIn profiles and searches, in a bid to reduce the effects of unconscious bias on recruiters.</p>
-                    <p><a href="https://unbias.io">Visit unbias.io &#8594;</a></p>
             
                     <h2>Coding Teaching</h2>
                     <img className="project" src={coding101} alt="Coding 101 slide in front of classroom" />

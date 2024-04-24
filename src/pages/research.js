@@ -9,17 +9,12 @@ class ResearchPage extends React.Component {
                 <Metadata title="Research by Jenny Brennan" desc="On data, AI, policy and society." canonical="https://jennybrennan.com/research"/>
                 <article>
                     <h1>Research</h1>
-                    <p>I research data, AI, policy and society at the <a href="https://adalovelaceinstitute.org">Ada Lovelace Institute</a>.</p>
-                    <p>My current focus areas are:</p>
-                    <ul>
-                        <li>Methods, policy and capacity building for auditing/inspecting algorithmic systems</li>
-                        <li>Algorithmic impact assessments and approaches to increase consideration and mitigation of risks in software development and data science</li>
-                        <li>Transparency and accountability for of AI in the public sector</li>
-                    </ul>
-                    <p>Beyond my main research, I'm also interested in the power dynamics of data infrastructure, the environmental impact of AI and existential risk.</p>
-                    <p>I've previously worked on research into policymaking for future generations and  unconscious bias, particularly in recruitment and online platforms.</p>
+                    <p>My current focus area is methods, governance mechanisms, policy, infrastructure and capacity building for evaluating AI models.</p>
+                    <p>My previous research has included developing algorithmic impact assessments, as well as transparency and accountability for of AI in the public sector.</p>
                     <h2 id="recent-publications">Recent publications</h2>
                     <ul>
+                        <li><a href="https://arxiv.org/abs/2404.14068">Holistic Safety and Responsibility Evaluations of Advanced AI Models</a>, 2024, Weidinger, L., Barnhart, J., Brennan, J., Butterfield, C., Young, S., Hawkins, W., Hendricks, L.A., Comanescu, R., Chang, O., Rodriguez, M., Beroshi, J., Bloxwich, D., Proleev, L., Chen, J., Farquhar, S., Ho, L., Gabriel, I., Dafoe, A. and Isaac, W. </li>
+                        <li><a href="https://arxiv.org/abs/2306.09871">Going public: the role of public participation approaches in commercial AI labs</a>, 2023, Groves, L., Peppin, A., Strait, A., and Brennan, J.</li>
                         <li><a href="https://www.adalovelaceinstitute.org/report/algorithmic-impact-assessment-case-study-healthcare/">Algorithmic impact assessment: a case study in healthcare</a>, 2022, Ada Lovelace Institute</li>
                         <li><a href="https://www.adalovelaceinstitute.org/report/technical-methods-regulatory-inspection/">Technical methods for regulatory inspection of algorithmic systems</a>, 2021, Ada Lovelace Institute</li>
                         <li><a href="https://www.adalovelaceinstitute.org/report/algorithmic-accountability-public-sector/">Algorithmic accountability for the public sector: Learning from the first wave of policy implementation</a>, 2021, Ada Lovelace Institute, AI Now and Open Government Partnership</li>
